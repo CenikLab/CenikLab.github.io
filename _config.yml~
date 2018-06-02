@@ -14,7 +14,7 @@ baseurl: ""
 title: Cenik Lab
 
 # Short description of your site
-description: Functional Genomics and Translation Control
+description: Translation Control and Functional Genomics
 
 # --- Navigation bar options --- #
 
@@ -63,7 +63,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: Can Cenik
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -72,14 +72,10 @@ author:
 social-network-links:
 #  rss: true
   email: "ccenik@stanford.edu"
-#  facebook: daattali
   github: cancenik
-#  twitter: daattali
   linkedin: can-cenik-021b3451
-#  stackoverflow: "3943160/daattali"
-#  youtube: user/deanat78
-#  spotify: yourname
 #  telephone: +14159998888
+#  twitter: daattali
 
 # Select which share links to show in posts
 share-links-active:
@@ -90,12 +86,12 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "CenikLab"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-120211245-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -112,9 +108,6 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 #disqus: ""
-
-# Facebook App ID
-# fb_app_id: ""
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page

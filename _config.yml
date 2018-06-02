@@ -20,11 +20,10 @@ description: Translation Control and Functional Genomics
 
 # List of links in the navigation bar
 navbar-links:
-  Team: "team"
-  Publications: "publications"
+  Team: "http://ceniklab.github.io/team.md"
+  Publications: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
   Research: "research"
   Jobs:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
   Contact: "contact"
