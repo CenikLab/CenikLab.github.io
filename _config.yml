@@ -20,7 +20,7 @@ description: Translation Control and Functional Genomics
 
 # List of links in the navigation bar
 navbar-links:
-  Team: "http://ceniklab.github.io/team.md"
+  Team: "team"
   Publications: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
   Research: "research"
   Jobs:
@@ -115,6 +115,11 @@ excerpt_length: 50
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
+
+# Add Google Maps
+maps:
+  google:
+  api_key:AIzaSyCMmFSL9cLvATTyA_eRx3IMtO0A6kfh2tI
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -214,6 +219,7 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-maps
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

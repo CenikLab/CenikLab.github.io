@@ -1,7 +1,8 @@
 # Beautiful Jekyll
 
-## Template from https://github.com/daattali/beautiful-jekyll
-
+#### Template from https://github.com/daattali/beautiful-jekyll
+#### Started inclusion of Google Map for the Contact page 
+Use https://github.com/ayastreb/jekyll-maps
 
 
 #### How do I move the blog to another page instead of having it on the home page?
