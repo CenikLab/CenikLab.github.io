@@ -21,11 +21,11 @@ description: Translation Control and Functional Genomics
 # List of links in the navigation bar
 navbar-links:
   Team: "team"
-  Publications: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
+  Publications: 
+    - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
+    - Google Scholar: "https://scholar.google.com/citations?user=DedRqJIAAAAJ"
   Research: "research"
-  Jobs:
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+  Jobs: "jobs"
   Contact: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)

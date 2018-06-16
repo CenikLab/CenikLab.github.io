@@ -1,9 +1,18 @@
 # Beautiful Jekyll
 
-#### Template from https://github.com/daattali/beautiful-jekyll
-#### Started inclusion of Google Map for the Contact page 
-Use https://github.com/ayastreb/jekyll-maps
+- Template from https://github.com/daattali/beautiful-jekyll
+- Started inclusion of Google Map for the Contact page. Using https://github.com/ayastreb/jekyll-maps
+- Need to update Publications: Three links:
+1- Pubmed
+2- Google Scholar. https://scholar.google.com/citations?user=DedRqJIAAAAJ
+3- Selected Publications. This can have link to journal website, summary image, pdf
 
+- Team: Should allow for a simple format. 
+Top image could be a lab photo. Followed by for each individual:
+Photo; List of Education BA; PhD; Postdoc. Link to CV. 
+If possible, we can do something like: http://greenleaf.stanford.edu/people.html
+
+- Need to update Home page. Posts can be recent publication summaries/news. 
 
 #### How do I move the blog to another page instead of having it on the home page?
 
