@@ -21,9 +21,9 @@ description: Translation Control and Functional Genomics
 # List of links in the navigation bar
 navbar-links:
   Team: "team"
-  Publications: 
-    - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
-    - Google Scholar: "https://scholar.google.com/citations?user=DedRqJIAAAAJ"
+  Publications:
+   - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
+   - Google Scholar: "https://scholar.google.com/citations?user=DedRqJIAAAAJ"
   Research: "research"
   Jobs: "jobs"
   Contact: "contact"
@@ -85,7 +85,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "CenikLab"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "CenikLab" 
 
 # --- Web Statistics Section --- #
 
@@ -119,7 +119,7 @@ title-separator: "-"
 # Add Google Maps
 maps:
   google:
-  api_key:AIzaSyCMmFSL9cLvATTyA_eRx3IMtO0A6kfh2tI
+  api_key: AIzaSyCMmFSL9cLvATTyA_eRx3IMtO0A6kfh2tI
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
