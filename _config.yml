@@ -22,6 +22,7 @@ description: Translation Control and Functional Genomics
 navbar-links:
   Team: "team"
   Publications:
+   - Selected Publications: "pubs"
    - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
    - Google Scholar: "https://scholar.google.com/citations?user=DedRqJIAAAAJ"
   Research: "research"
