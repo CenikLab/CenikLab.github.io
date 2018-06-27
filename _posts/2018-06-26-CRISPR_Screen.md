@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Determine cis-regulatory translation control elements in the human genome
+title: Develop a platform for discovery of trans-acting translation regulators
 image: /img/Figure2-web.jpg
 ---
 

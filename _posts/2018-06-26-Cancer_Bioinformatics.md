@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Determine cis-regulatory translation control elements in the human genome
-image: /img/Figure1-web.jpg
+title: Characterize translation machinery alterations in thousands of tumors of diverse origins
+image: /img/CancerBioinformatics.jpg
 ---
 
-Lack of sensitive methods limits our ability to characterize a potentially large class of regulatory variants that modulate translation. A major objective in our lab is to develop a suite of experimental and computational tools that will identify cis-acting genetic regulators of translation. 
-
+Recurrent cancer mutations that disrupt protein-coding regions have been identified through large- scale projects employing targeted sequencing strategies such as whole exome sequencing. While our previous work demonstrated that exome sequencing can reveal critical noncoding mutations in cancer, much of the genome remains inaccessible to analyses when targeted sequencing approaches are employed. Our lab develops computational methods to analyze cancer genomics data with an initial focus on alterations of the translation components. 
