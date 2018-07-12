@@ -14,15 +14,19 @@ subtitle: Selected Publications
 ![SMR](/img/CancerBioinformatics-01.jpg)
 
 4- Cenik C, Cenik ES, Byeon GW, Grubert F, Candille S, Spacek D, Alsallakh B, Tilgner H, Araya CL, Tang H, Ricci E, Snyder MP. Integrative analysis of RNA, translation and protein levels reveals distinct regulatory variation across humans. Genome Research. 2015 Nov; 25(11):1610-21. doi: 10.1101/gr.193342.115.  
+
 ![TranslationVariation](/img/TranslationVariation.jpg)
 
 5- Kucukural A, Ozadam H, Singh G, Moore MJ, Cenik C. ASPeak: an abundance sensitive peak detection algorithm for RIP-Seq. Bioinformatics. 2013 Oct; 29(19):2485-6. doi: 10.1093/bioinformatics/btt428.  
+
 ![ASPeak](/img/ASPeak.jpg)
 
-6- Singh G*, Kucukural A*, Cenik C, Weng Z, Moore MJ. The cellular EJC interactome reveals higher- order mRNP structure and an EJC-SR protein nexus. Cell. 2012 Nov; 151(4):750-64. doi:10.1016/j.cell.2012.10.007.   
+6- Singh G*, Kucukural A*, Cenik C, Weng Z, Moore MJ. The cellular EJC interactome reveals higher- order mRNP structure and an EJC-SR protein nexus. Cell. 2012 Nov; 151(4):750-64. doi:10.1016/j.cell.2012.10.007.  
+
 ![Cell](/img/CellAbstract.jpg)
 
-7- Cenik C, Chua HN, Tarnawsky SP, Derti A, Tasan M, Moore MJ, Palazzo AF, Roth FP. Genome analysis reveals interplay between 5’UTR introns and nuclear mRNA export of secretory and mitochondrial genes. PLoS Genetics. 2011 7(4): e1001366. doi: 10.1371/journal.pgen.1001366.    
+7- Cenik C, Chua HN, Tarnawsky SP, Derti A, Tasan M, Moore MJ, Palazzo AF, Roth FP. Genome analysis reveals interplay between 5’UTR introns and nuclear mRNA export of secretory and mitochondrial genes. PLoS Genetics. 2011 7(4): e1001366. doi: 10.1371/journal.pgen.1001366.  
+
 ![ALREX](/img/ALREX.jpg)
 
 8- Sephton CF*, Cenik C*, Kucukural A, Dammer EB, Cenik B, Han Y, Dewey CM, Roth FP, Herz J, Peng J, Moore MJ, Yu G. Identification of neuronal RNA targets of TDP-43-containing ribonucleoprotein complexes. Journal of Biological Chemistry. 2011 Jan; 286(2):1204 –1215. Paper of the Week. doi: 10.1074/jbc.M110.190884.  
