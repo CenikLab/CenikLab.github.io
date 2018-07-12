@@ -3,7 +3,7 @@ layout: page
 title: Contact
 subtitle: 
 ---
-<img style="float: right;" src="/img/MBB.jpg">
+<img style="float: right;" src="/img/MBB.jpeg">
 Can Cenik, PhD
 Moffett Molecular Biology Building
 2500 Speedway
