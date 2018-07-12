@@ -1,11 +1,7 @@
-# Beautiful Jekyll
-
+- We should make the publication images prettier. They should be resized to similar dimensions. 
 - Template from https://github.com/daattali/beautiful-jekyll
-- Started inclusion of Google Map for the Contact page. Using https://github.com/ayastreb/jekyll-maps
 - Need to update Publications: Three links:
-1- Pubmed
-2- Google Scholar. https://scholar.google.com/citations?user=DedRqJIAAAAJ
-3- Selected Publications. This can have link to journal website, summary image, pdf
+1- Selected Publications. This can have link to journal website, summary image, pdf
 
 - Team: Should allow for a simple format. 
 Top image could be a lab photo. Followed by for each individual:
@@ -22,7 +18,4 @@ The default style of Beautiful Jekyll is to feature the blog feed on the front p
 
 Unfortunately, this is a no-answer! There isn't a one-size-fits-all solution to this, because every person will view your site on a different browser with different dimensions. Some browsers will have very wide aspect ratio, some will be narrower, some will be vertical (such as phones), different phones have different screens, etc. The image will always be centered, so the only tip I can give is that you should make sure the important part of the image is in the middle so that it'll always show. Other than that, every browser will show a different clipping of the image.
 
-
-
-If you do fork or clone this project to use as a template for your site, I would appreciate if you keep the link in the footer to this project.  I've noticed that several people who forked this repo removed the attribution and I would prefer to get the recognition if you do use this :)
 

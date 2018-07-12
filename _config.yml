@@ -117,11 +117,6 @@ excerpt_length: 50
 # and RSS feed title
 title-separator: "-"
 
-# Add Google Maps
-maps:
-  google:
-  api_key: AIzaSyCMmFSL9cLvATTyA_eRx3IMtO0A6kfh2tI
-
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
