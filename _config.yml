@@ -37,7 +37,6 @@ navbar-links:
 # then specify the following parameter
 # title-img: /path/to/image
 
-paginate_path: "/research/page:num/"
 
 # --- Background colour/image options --- #
 
