@@ -3,7 +3,6 @@ layout: page
 title: Research
 subtitle:
 ---
-
 [**Characterize translation machinery alterations in thousands of tumors of diverse origins**](/2018-06-26-Cancer_Bioinformatics/)
 
 
