@@ -4,7 +4,7 @@ title: Join Us!
 subtitle: Current Openings
 ---
 
-We are currently looking for highly motivated graduate students and postdoctoral fellows to join the lab. You can see some of the current research interests [here](https://ceniklab.github.io/research/).
+We are currently looking for highly motivated graduate students and postdoctoral fellows to join the lab. You can see some of the current research interests [here](/research/).
 
 If you are interested in joining the lab, please send an email Can. In your email, please include your CV, a brief statement of why you are interested in the lab and contact information for at least 3 references.  
 

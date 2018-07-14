@@ -37,10 +37,10 @@
       </ul>
     </div>
 
-	{% if page.image and (layout.show-avatar or page.show-avatar) %}
+	{% if page.image and page.image-show-ontop and (layout.show-avatar or page.show-avatar) %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
-	    <a href="{{ site.url }}">
+	    <a href="{{ site.url }}"> {{ page.show-avatar }}
 	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
 		</a>
 	  </div>
