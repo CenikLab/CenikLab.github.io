@@ -10,4 +10,4 @@ subtitle:
 [**Develop a platform for discovery of trans-acting translation regulators**](https://ceniklab.github.io/2018-06-26-CRISPR_Screen/)
 
 
-[**Determine cis-regulatory translation control elements in the human genome**](https://ceniklab.github.io/2018-05-30-first-post/)
+[**Determine cis-regulatory translation control elements in the human genome**](https://ceniklab.github.io/2018-06-26-cis_regulation/)
