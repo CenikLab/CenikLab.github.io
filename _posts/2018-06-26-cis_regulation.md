@@ -4,7 +4,8 @@ title: Determine cis-regulatory translation control elements in the human genome
 image: /img/Figure1-web.jpg
 ---
 
-![Variants](/img/Figure1-web.jpg)
+![Variants](/img/Figure1-web.jpg)  
+
 Advances in sequencing have greatly accelerated our ability to catalog human genetic diversity, yet the functional consequences of these genomic differences are still poorly understood. Genetic variants typically exert phenotypic effects through impacts on protein function and abundance. By integrating RNA-seq data with transcription factor binding and chromatin profiles, significant progress has been made to our understanding of the genetic basis of RNA expression. As we and others have shown, however, protein levels are often poorly explained by RNA expression alone, suggesting additional critical regulatory steps. Although translation efficiency, i.e. the number of proteins synthesized per transcript, contributes significantly to determining protein levels, *little is currently known about the genetic determinants of translation efficiency in humans or their relevance to disease*.  
 
 For my postdoctoral work at Stanford, I have focused on the human genetics of translation regulation, generating RNA-Seq and ribosome profiling data from a diverse set of individuals and integrating these measurements with quantitative mass spectrometry-based proteomics. This study revealed that translation efficiency indeed varies among individuals and that the genetic factors underlying this translational variability can be mapped. In several cases, we pinpointed the mechanisms controlling the observed variation in translation efficiency, with genetic variability in sequences near the translation initiation sites being one such example.  
