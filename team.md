@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: team-list
 title: Team
 subtitle: Lab Members
 ---
 
-### Can Cenik 
+### Can Cenik
 * 2012-2018, Stanford University, School of Medicine
 
 Postdoctoral Fellow, Genetics. Advisor: Dr. Michael P. Snyder
@@ -20,10 +20,10 @@ BA, magna cum laude, highest honors, Applied Mathematics. Thesis Advisor: Dr. Jo
 *****
 
 
-Format: 
+Format:
 Member Name; 
-Education; 
-Photo; 
+Education;
+Photo;
 Links
 
 Alumni

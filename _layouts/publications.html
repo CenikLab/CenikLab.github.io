@@ -20,9 +20,10 @@ img {
          {{ pub.vol }} : {{ pub.pages }}. doi: {{ pub.doi }}
          <br>
          {% if pub.image %}
-         <img src= {{ pub.image }} width={{ pub.im_width }} height={{ pub.im_height }} class="publication_image">
+         <img src= {{ pub.image }} width={{ pub.im_width }} height={{ pub.im_height }} >
          <br><br>
          {% endif %}
+         <br>
          {% assign counter=counter | plus:1 %}
       {% endfor%}
     </div>

@@ -4,6 +4,18 @@ title: Cenik Lab
 subtitle: Translation Control and Functional Genomics
 use-site-title: true
 ---
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <h1 class="index_announcement">We are recruiting!</h1>
+
+      If you want to join our dynamic and interdisciplinary research lab,<br>
+      <a href="/jobs" >see the job openings</a>.
+    </div>
+  </div>
+</div>
+
+
 
 <div class="posts-list">
   {% for post in paginator.posts %}
@@ -31,10 +43,18 @@ use-site-title: true
       </div>
       {% endif %}
       <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% if post.html %}
+           {{ post.summary | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+           {% assign excerpt_word_count = post.summary | number_of_words %}
+           {% if post.content != post.summary or excerpt_word_count > site.excerpt_length %}
+             <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+           {% endif %}
+        {% else %}
+           {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+           {% assign excerpt_word_count = post.excerpt | number_of_words %}
+           {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+             <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+           {% endif %}
         {% endif %}
       </div>
     </div>
