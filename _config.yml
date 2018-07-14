@@ -22,7 +22,7 @@ description: Translation Control and Functional Genomics
 navbar-links:
   Team: "team"
   Publications:
-   - Selected Publications: "pubs"
+   - Selected Publications: "publications"
    - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
    - Google Scholar: "https://scholar.google.com/citations?user=DedRqJIAAAAJ"
   Research: "research"
@@ -86,7 +86,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "CenikLab" 
+url-pretty: "CenikLab"
 
 # --- Web Statistics Section --- #
 
@@ -148,6 +148,10 @@ defaults:
 
 # Use tags index page and make tags on each post clickable
 link-tags: true
+
+collections:
+  publications:
+    output: true
 
 # Exclude these files from production site
 exclude:
