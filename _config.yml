@@ -20,9 +20,9 @@ description: Translation Control and Functional Genomics
 
 # List of links in the navigation bar
 navbar-links:
-  Team: "team"
+  Team: "team.html"
   Publications:
-   - Selected Publications: "publications"
+   - Selected Publications: "publications.html"
    - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
    - Google Scholar: "https://scholar.google.com/citations?user=DedRqJIAAAAJ"
   Research: "research"
@@ -35,7 +35,8 @@ navbar-links:
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+title-img: img/logo.svg
+title-img-link: https://www.utexas.edu/
 
 
 # --- Background colour/image options --- #
@@ -68,7 +69,7 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
+#navbar-img: "/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
 
