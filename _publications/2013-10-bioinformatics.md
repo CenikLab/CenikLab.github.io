@@ -1,6 +1,6 @@
 ---
 title: ASPeak an abundance sensitive peak detection algorithm for RIP-Seq
-authors: Kucukural A, Ozadam H, Singh G, Moore MJ, Cenik C.
+authors: Kucukural A, Ozadam H, Singh G, Moore MJ, <b>Cenik C</b>
 journal: Bioinformatics
 year: 2013
 month: Oct

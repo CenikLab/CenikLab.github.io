@@ -1,6 +1,6 @@
 ---
 title: Plasma sterols and depressive symptom severity in a population-based cohort
-authors: Cenik B, Cenik C, Snyder MP, Brown SE
+authors: Cenik B*, <b>Cenik C*</b>, Snyder MP, Brown SE
 journal: PLoS ONE
 year: 2017
 month: Sep

@@ -1,6 +1,6 @@
 ---
 title: Genome-wide functional analysis of human 5'untranslated region introns
-authors: Cenik C, Derti A, Mellor JC, Berriz GF, Roth FP
+authors: <b>Cenik C</b>, Derti A, Mellor JC, Berriz GF, Roth FP
 journal: Genome Biology
 year: 2010
 month: Mar

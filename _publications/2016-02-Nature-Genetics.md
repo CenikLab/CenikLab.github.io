@@ -1,6 +1,6 @@
 ---
 title: Systematic identification of significantly mutated regions across cancer types highlights a rich landscape of functional molecular alterations
-authors: Araya CL, Cenik C, Reuter JA, Kiss G, Pande VS, Snyder MP, Greenleaf WG
+authors: Araya CL*, <b>Cenik C*</b>, Reuter JA, Kiss G, Pande VS, Snyder MP, Greenleaf WG
 journal: Nature Genetics
 year: 2016
 month: Feb

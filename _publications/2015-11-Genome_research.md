@@ -1,6 +1,6 @@
 ---
 title: Integrative analysis of RNA, translation and protein levels reveals distinct regulatory variation across humans
-authors: Cenik C, Cenik ES, Byeon GW, Grubert F, Candille S, Spacek D, Alsallakh B, Tilgner H, Araya CL, Tang H, Ricci E, Snyder MP
+authors: <b>Cenik C</b>, Cenik ES, Byeon GW, Grubert F, Candille S, Spacek D, Alsallakh B, Tilgner H, Araya CL, Tang H, Ricci E, Snyder MP
 journal: Genome Research
 year: 2015
 month: Nov
