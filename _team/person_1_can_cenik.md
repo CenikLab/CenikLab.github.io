@@ -1,5 +1,5 @@
 ---
-layout: teammate
+layout: team-list
 name: Can Cenik
 title: Principal Investigator
 interests: everything

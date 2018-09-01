@@ -1,5 +1,5 @@
 ---
-layout: teammate
+layout: team-list
 name: Future Member
 title: Research Associate
 interests: Wet Lab
