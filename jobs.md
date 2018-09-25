@@ -13,7 +13,7 @@ We are currently looking for highly motivated graduate students and postdoctoral
   &nbsp;
 
 #### Research Scientist Associate
-The Cenik Lab is looking to recruit a research scientist to join the lab. The purpose of the position is to perform molecular biology and cell culture experiments to assist with research on translation control in humans. Please apply through the [UT Austin website](https://utdirect.utexas.edu/apps/hr/jobs/nlogon/180710024216).
+The Cenik Lab is looking to recruit a research scientist to join the lab. The purpose of the position is to perform molecular biology and cell culture experiments to assist with research on translation control in humans.
 
  &nbsp;
 
