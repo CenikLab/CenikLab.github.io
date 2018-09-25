@@ -8,7 +8,7 @@ im_width: 160
 ---
 * 2015 - 2017, Pune University, Pune, Maharashtra, India   
 Research Associate
-* 2009 - 2015, Hislop College, Nagpur, Maharashtra, India   
+* 2009 - 2015, Pune University, Pune, Maharashtra, India  
 PhD Scholar
 * 2007 - 2009, Hislop College, Nagpur, Maharashtra, India      
 M.S. Biotechnology
