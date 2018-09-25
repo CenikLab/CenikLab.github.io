@@ -1,7 +1,7 @@
 ---
 layout: team-list
 name: Tori Tonn
-title: Research Associate I
+title: Research Associate
 interests: Wet Lab
 image: /img/team/tori-tonn2.jpg
 im_width: 160

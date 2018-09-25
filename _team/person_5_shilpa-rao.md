@@ -1,7 +1,7 @@
 ---
 layout: team-list
 name: Shilpa Rao
-title: Research Associate I
+title: Research Scientist
 interests: Wet Lab
 image: /img/team/shilpa-rao.jpg
 im_width: 160
