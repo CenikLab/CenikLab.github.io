@@ -19,6 +19,6 @@ Moffett Molecular Biology Building
 2500 Speedway  
 Austin, TX 78712
 
-Email: ccenik [at] stanford.edu
+Email: <img src="/img/ceniklab_email.png">
 
-Lab Phone:  
+Lab Phone: 512-232-2874 
