@@ -4,7 +4,7 @@ title: Join Us!
 subtitle: Current Openings
 ---
 
-If you are interested in joining the lab, please send an email to Can Cenik (ccenik [at] stanford.edu). In your email, please include your CV, a brief statement of why you are interested in the lab and contact information for at least 3 references.  
+If you are interested in joining the lab, please send an email to Can Cenik (ccenik [at] austin.utexas.edu). In your email, please include your CV, a brief statement of why you are interested in the lab and contact information for at least 3 references.  
 
 #### Graduate Students and Postdoctoral Fellows
 
