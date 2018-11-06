@@ -8,3 +8,85 @@
 .index_announcement {
   color: #EE4F4F;
 }
+
+
+#teamheader {
+display: inline-block;
+width: 100%;
+min-width: 100%;
+margin: auto;
+
+}
+
+.teamleft{
+    float: left;
+    margin: 10px;
+    color:black;
+}
+
+.teamright{
+
+    margin: 10px;
+    color: black;
+}
+
+.teamclear{
+    float: clear;
+}
+
+.team-image {
+  
+  float: right;
+
+  width: 200px;
+  margin-top: -35px;
+
+
+
+}
+
+.team-image img {
+
+  width: 200px;
+
+}
+
+.team-image:hover {
+  filter: grayscale(90%);
+}
+
+.team-entry {
+
+  margin-right: 160px;
+  width: 100%;
+}
+
+.team-name{
+
+  font-size: 35px;
+}
+
+.team-title{
+
+  font-size: 25px;
+}
+
+.team-container{
+	float: left;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .team-image, .team-image img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .team-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    float: left;
+  }
+}

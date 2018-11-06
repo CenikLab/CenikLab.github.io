@@ -2,6 +2,8 @@
 layout: page
 ---
 
+
+<!--
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -11,9 +13,40 @@ layout: page
       <img  src="{{ person.image }}" width="{{ person.im_width }}" height="{{ person.im_height}}" />
       <h3>{{ person.name }}</h3>
       <strong>{{ person.title }}</strong>
-      <br>
       {{ person.content }}
       {% endfor%}
     </div>
   </div>
+</div>
+-->
+
+<div class="posts-list">
+<img src="img/lab_life/2018/new_first_lab_meeting_2018-11-02.jpg">
+
+
+  {% for person in site.team %}
+  <article class="post-preview">
+   
+    <h2 class="team-name">{{ person.name }}</h2>
+    <strong class="team-title">{{ person.title }}</strong>
+
+
+    <p class="post-meta">
+
+    </p>
+
+    <div class="post-entry-container">
+
+      <div class="team-image">
+          <img src="{{ person.image }}">
+      </div>
+
+      <div class="post-entry">
+         {{ person.content }}
+      </div>
+    </div>
+
+
+   </article>
+  {% endfor %}
 </div>
