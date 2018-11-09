@@ -165,8 +165,18 @@ defaults:
 link-tags: true
 
 collections:
-  publications:
+  publications_other:
     output: true
+  publications_cancer:
+    output: true
+  publications_functional_genomics:
+    output: true
+  publications_RBP:
+    output: true
+  publications_software:
+    output: true
+  publications_translation_control:
+    output: true  
   team:
     output: true
 

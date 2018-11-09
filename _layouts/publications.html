@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
+<!- There is too much repetition. How can we avoid this in liquid? ->
+
 <style>
 img {
     display: block;
@@ -13,7 +15,7 @@ img {
     <!- div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" ->
     <div class="col-lg-8  col-md-10 ">
       {% assign counter = 1 %}
-      {% for pub in site.publications reversed %}
+      {% for pub in site.publications_translation_control %}
          {{ counter }} - {{ pub.authors }}.
          <a href= {{ pub.link }} >{{ pub.title }}</a>.
          {{ pub.journal }}. {{ pub.year }} {{ pub.month }};
@@ -27,5 +29,90 @@ img {
          {% assign counter=counter | plus:1 %}
       {% endfor%}
     </div>
+
+    <div class="col-lg-8  col-md-10 ">
+
+      {% for pub in site.publications_functional_genomics reversed %}
+         {{ counter }} - {{ pub.authors }}.
+         <a href= {{ pub.link }} >{{ pub.title }}</a>.
+         {{ pub.journal }}. {{ pub.year }} {{ pub.month }};
+         {{ pub.vol }} : {{ pub.pages }}. doi: {{ pub.doi }}
+         <br>
+         {% if pub.image %}
+         <img src= {{ pub.image }} width={{ pub.im_width }} height={{ pub.im_height }} >
+         <br><br>
+         {% endif %}
+         <br>
+         {% assign counter=counter | plus:1 %}
+      {% endfor%}
+    </div>
+
+    <div class="col-lg-8  col-md-10 ">
+
+      {% for pub in site.publications_cancer reversed %}
+         {{ counter }} - {{ pub.authors }}.
+         <a href= {{ pub.link }} >{{ pub.title }}</a>.
+         {{ pub.journal }}. {{ pub.year }} {{ pub.month }};
+         {{ pub.vol }} : {{ pub.pages }}. doi: {{ pub.doi }}
+         <br>
+         {% if pub.image %}
+         <img src= {{ pub.image }} width={{ pub.im_width }} height={{ pub.im_height }} >
+         <br><br>
+         {% endif %}
+         <br>
+         {% assign counter=counter | plus:1 %}
+      {% endfor%}
+    </div>
+
+    <div class="col-lg-8  col-md-10 ">
+
+      {% for pub in site.publications_software %}
+         {{ counter }} - {{ pub.authors }}.
+         <a href= {{ pub.link }} >{{ pub.title }}</a>.
+         {{ pub.journal }}. {{ pub.year }} {{ pub.month }};
+         {{ pub.vol }} : {{ pub.pages }}. doi: {{ pub.doi }}
+         <br>
+         {% if pub.image %}
+         <img src= {{ pub.image }} width={{ pub.im_width }} height={{ pub.im_height }} >
+         <br><br>
+         {% endif %}
+         <br>
+         {% assign counter=counter | plus:1 %}
+      {% endfor%}
+    </div>
+
+    <div class="col-lg-8  col-md-10 ">
+
+      {% for pub in site.publications_RBP %}
+         {{ counter }} - {{ pub.authors }}.
+         <a href= {{ pub.link }} >{{ pub.title }}</a>.
+         {{ pub.journal }}. {{ pub.year }} {{ pub.month }};
+         {{ pub.vol }} : {{ pub.pages }}. doi: {{ pub.doi }}
+         <br>
+         {% if pub.image %}
+         <img src= {{ pub.image }} width={{ pub.im_width }} height={{ pub.im_height }} >
+         <br><br>
+         {% endif %}
+         <br>
+         {% assign counter=counter | plus:1 %}
+      {% endfor%}
+    </div>
+
+    <div class="col-lg-8  col-md-10 ">
+      {% for pub in site.publications_other reversed %}
+         {{ counter }} - {{ pub.authors }}.
+         <a href= {{ pub.link }} >{{ pub.title }}</a>.
+         {{ pub.journal }}. {{ pub.year }} {{ pub.month }};
+         {{ pub.vol }} : {{ pub.pages }}. doi: {{ pub.doi }}
+         <br>
+         {% if pub.image %}
+         <img src= {{ pub.image }} width={{ pub.im_width }} height={{ pub.im_height }} >
+         <br><br>
+         {% endif %}
+         <br>
+         {% assign counter=counter | plus:1 %}
+      {% endfor%}
+    </div>
+
   </div>
 </div>
