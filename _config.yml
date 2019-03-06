@@ -20,7 +20,9 @@ description: Translation Control and Functional Genomics
 
 # List of links in the navigation bar
 navbar-links:
-  Team: "team.html"
+  Team: 
+   - Lab Members: "team.html"
+   - Collaborators: "collaborators.html"
   Publications:
    - Selected Publications: "publications.html"
    - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
@@ -178,6 +180,8 @@ collections:
   publications_translation_control:
     output: true  
   team:
+    output: true
+  collaborators:
     output: true
 
 # Exclude these files from production site

@@ -1,0 +1,35 @@
+---
+layout: page
+---
+
+<div class="posts-list">
+
+  {% for collab in site.collaborators %}
+  <article class="post-preview">
+   
+    <h2 class="team-name">{{ collab.name }}</h2>
+    <strong class="post-meta">{{ collab.university }}</strong>
+
+
+
+    <div class="post-entry-container">
+
+      <div class="team-image">
+          <img src="{{ collab.image }}">
+      </div>
+      {% if collab.PI %}
+       <strong>PI: {{collab.PI}}</strong>
+      {% endif %} 
+       <br>
+       <b>Website:</b> <a href="{{collab.website}}"  target="_blank">{{collab.website}}</a>
+
+
+      <div class="post-entry">
+         {{ collab.content }}
+      </div>
+    </div>
+
+
+   </article>
+  {% endfor %}
+</div>
