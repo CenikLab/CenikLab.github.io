@@ -16,7 +16,7 @@ subtitle:
 
 Can Cenik, PhD  
 [Department of Molecular Biosciences](https://molecularbiosci.utexas.edu/)   
-Moffett Molecular Biology Building 2.124 
+Moffett Molecular Biology Building 2.122 
 2500 Speedway  
 Austin, TX 78712
 
