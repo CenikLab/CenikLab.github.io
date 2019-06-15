@@ -37,12 +37,19 @@ layout: page
 
     <div class="post-entry-container">
 
-      <div class="team-image">
-          <img src="{{ person.image }}">
-      </div>
+      
+          
+      
 
       <div class="post-entry">
+        <div class="team-image">
+        <img src="{{ person.image }}">
+        </div>
          {{ person.content }}
+         {% if person.description %}
+            <br>
+            {{ person.description }}
+         {% endif %}
       </div>
     </div>
 

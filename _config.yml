@@ -22,6 +22,7 @@ description: Translation Control and Functional Genomics
 navbar-links:
   Team: 
    - Lab Members: "team.html"
+   - Lab Life: "lab_life.html"
    - Collaborators: "collaborators.html"
   Publications:
    - Selected Publications: "publications.html"

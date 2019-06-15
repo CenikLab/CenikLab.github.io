@@ -7,9 +7,14 @@ layout: page
   {% for collab in site.collaborators %}
   <article class="post-preview">
    
-    <h2 class="team-name">{{ collab.name }}</h2>
+    <h2 class="team-name">
+       <a href="{{collab.website}}"  target="_blank">{{ collab.name }}</a>
+    </h2>
     <strong class="post-meta">{{ collab.university }}</strong>
-
+            {% if collab.PI %}
+            <br>
+       <strong>PI: {{collab.PI}}</strong>
+      {% endif %} 
 
 
     <div class="post-entry-container">
@@ -17,14 +22,12 @@ layout: page
       <div class="team-image">
           <img src="{{ collab.image }}">
       </div>
-      {% if collab.PI %}
-       <strong>PI: {{collab.PI}}</strong>
-      {% endif %} 
-       <br>
-       <b>Website:</b> <a href="{{collab.website}}"  target="_blank">{{collab.website}}</a>
-
+      
 
       <div class="post-entry">
+
+       <br>
+
          {{ collab.content }}
       </div>
     </div>
