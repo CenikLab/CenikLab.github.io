@@ -14,6 +14,6 @@ description:
     When Ian feels like being less physically active, you'll find him critically examining political and philosophical debates and reading all sorts of nonfiction- from religious history to particle physics. 
     Ian has a "peacemaker" personality and is very laid-back, so don't be hesitant to say "hi".
 ---
-* 2013, , University of Colarado at Denver   
+* 2013, University of Colarado at Denver   
 B.S. Biology  
 Chemistry Minor 
