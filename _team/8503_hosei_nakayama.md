@@ -1,6 +1,6 @@
 ---
 layout: team-list
-name: Hosei Nakayama
+name: Hosei Nakajima
 title: Undergraduate Research Assistant
 interests: Computational & Wet Lab
 image: /img/team/hosei_nakayama.jpeg
