@@ -8,8 +8,10 @@
         <span class="icon-bar"></span>
       </button>
       {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.title-img-link }}"><img src="{{ site.title-img }}"/></a>
-        &nbsp;&nbsp;&nbsp;&emsp; <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+           <a class="navbar-brand" href="{{ site.url }}"><font size="5">{{ site.title }}</font></a>
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.title-img-link }}">
+          <img width="95" src="{{ site.title-img }}"/>
+        </a>
       {% else %}
         <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
       {% endif %}
