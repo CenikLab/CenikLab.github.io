@@ -24,6 +24,8 @@ navbar-links:
    - Lab Members: "team.html"
    - Lab Life: "lab_life.html"
    - Collaborators: "collaborators.html"
+  Software:
+    - Ribo: "https://ribosomeprofiling.github.io/"
   Publications:
    - Selected Publications: "publications.html"
    - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
