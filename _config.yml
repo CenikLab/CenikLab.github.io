@@ -24,6 +24,7 @@ navbar-links:
    - Lab Members: "team.html"
    - Lab Life: "lab_life.html"
    - Collaborators: "collaborators.html"
+   - Alumni: "alumni.html"
   Software:
     - Ribo: "https://ribosomeprofiling.github.io/"
   Publications:
@@ -185,6 +186,8 @@ collections:
   team:
     output: true
   collaborators:
+    output: true
+  alumni:
     output: true
 
 # Exclude these files from production site
