@@ -22,10 +22,10 @@ layout: page
 
 <div class="posts-list">
 
-
-  {% for person in site.alumni %}
+  {% assign revlist = site.alumni | reverse %}
+  {% for person in revlist %}
   <article class="post-preview">
-   
+
     <h2 class="team-name">{{ person.name }}</h2>
     <strong class="team-title">{{ person.title }}</strong>
 
@@ -36,7 +36,7 @@ layout: page
 
     <div class="post-entry-container">
 
-      
+
       <div class="post-entry">
         <div class="team-image">
         <img src="{{ person.image }}">
