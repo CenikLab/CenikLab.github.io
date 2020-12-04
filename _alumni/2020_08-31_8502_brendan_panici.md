@@ -8,6 +8,6 @@ image: /img/team/brendan_panici.jpg
 im_width: 160
 im_height: 160
 description:
-   Brendan is a fourth-year biology student interested in genetic diseases and computer science. Currently, he is researching Diamond-Blackfan Anemia, a disease as intriguing as its name.
-   When Brendan is not researching, he is either working out, cooking, or somewhere outside.
+   Brendan was an biology student interested in genetic diseases and computer science. His research in the lab focused on Diamond-Blackfan Anemia, a disease as intriguing as its name.
+   When Brendan is not researching, he is either working out, cooking, or somewhere outside. He is currently a PhD student at Baylor College of Medicine.   
 ---
