@@ -1,4 +1,5 @@
 ---
 layout: publications
-title: Selected Publications
+title: 
+subtitle: Selected Publications
 ---
