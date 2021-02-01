@@ -1,7 +1,7 @@
 ---
 layout: team-list
 name: Hansel Chiang
-title: Undergraduate Laboratory Assistant
+title: Undergraduate Research Assistant
 interests: Wet Lab
 image: /img/team/hansel_chiang.jpg
 im_width: 160
