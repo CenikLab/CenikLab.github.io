@@ -4,11 +4,15 @@ title: Join Us!
 subtitle: Current Openings
 ---
 
-If you are interested in joining the lab, please send an email to Can Cenik (ccenik [at] austin.utexas.edu). In your email, please include your CV, a brief statement of why you are interested in the lab and contact information for at least 3 references.  
+#### Postdoctoral Fellow
 
-#### Graduate Students and Postdoctoral Fellows
+We are currently looking for a highly motivated postdoctoral fellow to join the lab. You can see some of the current research interests [here](/research). If you are interested in joining the lab, please send an email to Can Cenik (ccenik [at] austin.utexas.edu). In your email, please include your CV, a brief statement of why you are interested in the lab and contact information for at least 3 references.  
 
-We are currently looking for highly motivated graduate students and postdoctoral fellows to join the lab. You can see some of the current research interests [here](/research).
+
+ &nbsp;
+
+#### Graduate Students
+We accept rotation students from all programs within [ICMB](https://icmb.utexas.edu/graduate-programs). Please email Can if you are interested in learning more about rotation projects. 
 
  &nbsp;
 
