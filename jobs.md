@@ -6,7 +6,11 @@ subtitle: Current Openings
 
 #### Postdoctoral Fellow
 
-We are currently looking for a highly motivated postdoctoral fellow to join the lab. You can see some of the current research interests [here](/research). If you are interested in joining the lab, please send an email to Can Cenik (ccenik [at] austin.utexas.edu). In your email, please include your CV, a brief statement of why you are interested in the lab and contact information for at least 3 references.  
+We are currently looking for a highly motivated and ambitious postdoctoral fellow to join the lab. We have recently developed a ribosome profiling strategy that can be applied to ultra-low input samples. The applicant will be responsible for further optimizing the strategy to enable the first single cell measurements of ribosome occupancy and will collaborate with domain experts to apply these methods to address critical biological problems.
+
+ &nbsp;
+
+PhD degree must have been received within the past 3 years in a relevant field (ex. Genetics, Genomics, Biochemistry, Molecular Biology). Applicants should have a strong background in high throughput sequencing approaches and molecular biology. You can read more about our current research interests [here](/research). If you are interested in joining the lab, please send an email to Can Cenik (ccenik [at] austin.utexas.edu). In your email, please include your CV, a brief statement of why you are interested in the lab and contact information for at least 3 references.  
 
 
  &nbsp;
