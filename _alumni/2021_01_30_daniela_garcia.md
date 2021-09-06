@@ -8,11 +8,9 @@ im_width: 160
 im_height: 160
 description:
 
-   Daniela currently works at Thermo Fisher. I am broadly interested in using genome-wide approaches to understand the roles of RNA in cancer and other diseases. 
-   Outside of lab, I enjoy trying new foods, wine tasting, craft beers and boxing (to keep it healthy). 
+   Daniela currently works at Thermo Fisher. 
 
 
- 
 ---
 * 2018-2019, Princeton University  
 Postdoctoral Fellow, Molecular Biology  
