@@ -363,9 +363,57 @@ Version 1, January 20, 2022
     </ol>
     
     <li class="subpheader" > RIBOsome profiling via IsoTachoPhoresis (Ribo-ITP)  </li>
+    <ol type="1">
+        <li>Cover the BlueLight source (Clare Chemical Dark Reader Transilluminator) with its light filter then turn it on to enable fluorophore visualization. Turn off lights in order to visualize fluorophore well.  </li>
+        <li> A Keithley 2410 Sourcemeter, controlled using MatLab was used to apply a constant 300 mA across the channel with a maximum voltage of 1.1 kV.  </li>
+        <li> Apply current to the channel to start sample migration.  </li>
+        <li> When the fluorescent band passes by Branch Channel 1, a secondary negative lead was added to LE Reservoir 1.  </li>
+	<ol type="a">
+	   <li>In a typical run, the starting voltage was ~250 V. The voltage initially decreases then increases as resistance in the channel becomes greater.
+ </li>
+	   <li>In an ideal run, we expect the marker DNAs to concentrate as a sharp band in the 5% PA gel. Upon entering the 10% PA gel, two bands (representative of each DNA marker) are expected to form.</li>
+	   <li> Watch out for the timing of the DNA concentration. We expect the DNA to reach the 5% PA boundary by ~10 min. At the 13–14-minute mark, it should reach the 10% interface. Around 17 minutes, the first marker should be nearing the elution well. After cleaning well and exchanging the collection buffer for Diagenode Dephosphorylation Buffer (DB), sample elution is expected to take ~2 min. A typical run should take ~20-25 minutes. 
+  </li>
+	   <li> A good run will have minimal curvature of the DNA bands, and the two bands should separate more as they travel through the 10% PA gel.
+  </li>
+	</ol>
+	<li> Pause current application when the lower fl-DNA marker (19ntfl) begins entering the elution well.  </li>
+        <li> Discard the running buffer and wash the elution well twice with 30 μL nuclease-free water. Avoid leaving residual volume in the well.  </li>
+        <li> Add 10 μL of 8:2 diluted Dephosphorylation Buffer (DB) (Diagenode) to the elution well. This is equivalent to 8 μL NFH2O + 2 μL DB, which is the starting buffer in the Diagenode D-Plex kit for library prep.  </li>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/u3mUuRIVTW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li> Resume the current until the upper fl-DNA marker (36ntfl) begins entering the elution well.  </li>
+	<li> Pipet the 10 μL sample pipetted into a 0.2 ml low bind PCR tube and immediately freeze it at -80C until further processing.  </li>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ldh-8tUr39E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/R49TwVJf0eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ol>
     
     <li class="subpheader" > Library preparation for Ribo-ITP libraries  </li>
-    
+    <ol type="1">
+        <li> Sequencing libraries were prepared using the Diagenode D-Plex Small RNA-seq kit (Diagenode) per manufacturer’s instructions, with the following minor modifications:  </li>
+	<ol type="a">
+	   <li> In the dephosphorylation rxn:  </li>
+	   <ol type="1">
+		   <li> used 1μL of a 1:1 mix of Dephosphorylation Reagent (DR) (Diagenode) and T4 PNK (NEB) instead of just 0.5 μL of DR.  </li>
+		   <li> incubated the samples for 25 minutes at 37C instead of 15 min.  </li>
+	   </ol>   
+	   <li> For low input ITP samples, the RTPM was used as reverse transcription primer (not the RTPH). RTPH is used when we create “bulk” ribosome profiling libraries, with 25ng inputs as starting material.  </li>
+	   <li> For low input ITP samples, a 1:2 dilution of the template switching oligo was required.   </li>
+	   <li> After cDNA synthesis, ½ of the cDNA (13 μL) was stored as backup (-20C or long-term at -80C). The removed 13 μL was replaced with NFH2O and PCR proceeded as written. </li>
+	   <li> 17 PCR cycles were used for low-input ITP samples (using ½ of the cDNA) in both the SI (single index) and UDI (unique dual index) modules of the kit.  </li>
+	</ol>
+        
+	<li> 1 μL of a 1:4 dilution of the PCR product was assessed via High Sensitivity DNA bioanalyzer.   </li>    
+        <ol type="a">
+	    <li> A peak of ~200bp is expected when using the UDI module (~30nt inserts).  </li>
+	    <li> A peak of ~190bp is expected when using the SI module (~30nt inserts).  </li>
+	</ol>
+	<li> The sample peak of interest was quantified by bioanalyzer.   </li>    
+        <li> Samples are pooled such that an equimolar amount of the peak-of-interest was present in the pool. 40 μL of the least-concentrated sample is used. It is ok to skip pooling of the samples when dealing with low sample numbers. However, when many samples are being processed, it is helpful to pool “like samples” before bead purification and size selection. (e.g. make a pool of all GV samples, one pool of all MII samples, etc).   </li>    
+        <li> Pools of PCR products were cleaned with Ampure XP beads (1.8x ratio) and eluted in 30 μL NFH2O.  </li> 
+        <li> The entire elution was size selected on a 3% agarose cassette using the Blue Pippin system, targeting either 190 or 200 bp using “tight” settings.  </li>    
+        <li> The 40 μL elution was collected from blue pippin and analyzed using High Sensitivity DNA bioanalyzer. Dilution is usually not necessary for this pool, but think about your expected concentration, which depends on your original sample pool. If needed, samples can be diluted prior to checking on bioanalyzer.  </li>    
+    </ol>
+
   </ol>
 
 
@@ -382,15 +430,53 @@ Version 1, January 20, 2022
   <ol type="A">
   
     <li class="subpheader" >  Working with RNA </li>
+    <ol type="1">
+        <li> Thoroughly clean your bench, pipets, etc with RNase zap before starting ITP.  </li>
+        <li> Aliquot stocks of reagents in order to avoid risks of RNase contamination.  </li>
+        <li> Change gloves often. </li>
+        <li> Always use sterile, nuclease free, filtered pipet tips with low retention.  </li>
+    </ol>
     
     <li class="subpheader" >  Preparing PDMS chips </li>
+    <ol type="1">
+        <li>
+		 Some things to look out for if your PDMS chips aren’t working:
+	</li>
+	<ol type="a">
+	    <li> If the liquid PDMS is underbaked after pouring it on the molds, it will be sticky and not bind to the glass channel properly after plasma cleaning. Ensure that the molds are not sticky after overnight incubation at 50C.   </li>
+	    <li> If the edges of the channels are not properly binding to the glass after plasma cleaning, it may be time to prepare new molds. Older molds (~ 1 year old) start consistently having this problem, and replacing them with new ones immediately fixes the problem.
+  </li>
+	</ol>
+    </ol>
     
     <li class="subpheader" >  Fluorescent markers </li>
-    
+    <ol type="1">
+        <li> This protocol originally used fluorescently labeled RNA markers with 3’ ddC modifications. Despite the ddC blocking nucleotide, RNA markers consistently generated sequencing libraries (i.e negative controls just containing markers and no cellular input generated libraries; upon sequencing, these were clearly our markers). Over multiple tries, fresh RNA markers were re-ordered, single use aliquots were made, resuspension buffers were changed, etc… and they always degraded (even never-before-used aliquots!). IDT and Bio-Synthesis were unable to guarantee 100% pure RNAs. Additionally, these oligos are known to degrade in -80C over time. Due to these issues, the switch to ssDNA markers was made.  </li>
+       <li>
+       The switch to fluorescently labeled DNA markers with 3’ ddC modifications was made in Jan. 2020. The library prep kit (Diagenode D-Plex) was able to amplify ssDNAs with 3’ OH groups, but not the fl-DNAs with 3’ ddC (after they were gel purified in-lab). Again, since the synthesis companies aren’t able to guarantee 100% purity, it was required to gel purify the markers in house in order to gain higher purity (oligos with lengths n-1 or n-2 are the most common contaminants, which means the most common contaminants lack the 3’ ddC). When gel purifying, only the top ½ of the fluorescent band was extracted to remove ddC-lacking species in stock solutions.
+       </li>
+    </ol>   
     <li class="subpheader" >  Nucleases &amp; nuclease inhibition </li>
-    
+    <ol type="1">
+        <li> Aliquot single-use vials of MNase to avoid freeze thaw cycles.  </li>
+	<li> It would be great to enhance flexibility in the future by figuring out how to get ITP to work with different nucleases. Since MNase relies on Ca++ for function, EGTA (calcium quencher) served as an effective MNase inhibitor, and only minorly effected size selection/yield at Cf=10mM in ITP. Other nucleases, however, would need different inhibitors.   </li>
+	<ol type="a">
+            <li> We found that VRC migrated just ahead of our RPFs and was present in our collection fractions. VRC is known to inhibit downstream enzymatic reactions.   </li>
+            <li> We tested proteinase K and found that it altered the digestion profile of our RNA samples. We think that it begins digesting the ribosome prior to fully inhibiting the nuclease, resulting in changes to the RNA profile (overdigestion).  </li>
+	</ol>
+    </ol>
     <li class="subpheader" >  Test experiments for beginners </li>
-    
+    <ol type="1">
+       <li> Yield &amp; size selection  </li>
+       <ol type="a">
+           <li> One can run an RNA of choice (small RNA ladder or pre-digested/extracted RNA containing RPFs) through ITP and compare check yield on a gel, as compared to the input RNA. Can also assess size selection (exclusion of unwanted small/large fragments; yield of target fragments).  </li>
+       </ol>
+       <li> Ribosome profiling of ~100 K562 cells  </li>
+       <ol type="a">
+           <li> The first attempt with actual cells should be the 100 K562 cells (dilution method described in protocol).   </li>
+           <li> Optimizations for new cell types/counts would likely be necessary.  </li>
+       </ol>
+    </ol>    
   </ol>
 
   <!-- GENERAL CONSIDERATIONS ENDS  -->
@@ -404,6 +490,15 @@ Version 1, January 20, 2022
 
 
   <li class="pheader" id="otherconsiderations">Other considerations</li>
+  <ol type="1">
+     <li> pH is very important in ITP.  </li>
+     <ol type="a">
+         <li> Buffers have been optimized to have pH around 7.2. If the pH of buffers is incorrect, check the pH of the BisTris-HCl Master Mix and ensure it is at 7.2.  </li>
+         <li> If size selection is poor or ITP seems to be running poorly, check the pH of your solutions; especially the lab-made ones. The 2.5M BisTris has a pH of &gt;= 10.  </li>
+     </ol>
+     <li> Aliquots are your best friend. They help avoid RNase contamination, freeze thaw cycling, etc.  </li>
+     <li> Our protocol uses 1.5 μL of each 1μM fl-DNA marker. This can be hard to see, but we use this small amount in order to minimize risk of converting these to libraries. Marker amount can be scaled up depending on application.  </li>
+  </ol>
   
 
 
