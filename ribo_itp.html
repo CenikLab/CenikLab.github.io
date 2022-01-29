@@ -78,10 +78,23 @@ Version 1, January 20, 2022
 
     <li class="subpheader" >Materials</li>
 
-    <i>??could insert spreadsheet with all reagents, including a tab for chemicals, oligonucleotides, etc. For transparency, could include manufacturer/part number and approximate cost for each item ?? </i>
+    <i>?? Spreadsheet coming soon  ?? </i>
 
     <li class="subpheader" >Purchasing molds for microfluidic chips</li>
-    <i>??insert detailed information on how to order the molds from ProtoLabs??</i>
+    <ol type="1">
+       <li> Create an account with ProtoLabs.  </li>
+       <li> Begin a new project and click on "Generate a New Quote".  </li>
+       <li> Choose the ‘3D Printing’ service and upload the <a href="img/protocols/riboitp/Extended_channel_3D.SLDPRT">Extended_channel_3D.SLDPRT</a>  </li>
+       <li> Ensure the following settings are selected from their drop-down menus:  </li>
+       <ol type="a">
+           <li> Material- ABS-Like Translucent Clear (WaterShed)  </li>
+           <li> Resolution- High Res </li>
+           <li> Finish- Unfinished  </li>
+           <li> Orientation- Custom  </li>
+       </ol>
+       <li> Under the ‘More Options’ setting, include the special instruction to use a <i>Substrate Build.</i> It is important that this setting is clearly defined to ensure smooth and clear molds are made.  </li>
+       <li> Click ‘Review Quote’ and continue through the purchasing page.  </li>
+    </ol>
   </ol>
 
   <!-- MATERIALS LIST ENDS  -->
@@ -95,14 +108,83 @@ Version 1, January 20, 2022
   <ol type="A">
 
     <li class="subpheader" >Buffer preparation</li>
-    ??<i> insert a table of the buffer recipes outlined on the in-house protocol</i>  ??
+    ??<i> A table is on the way</i>  ??
   
     <li class="subpheader" >Gel purification of fluorescent DNA oligonucleotides</li>
-    <i>  ?? Write protocol here for oligo purification  ??   </i>
+
+    <ol type="1">
+    <br>
+    <u>Day 1</u>
+        <li> Place a 10-well 15% TBE Urea Polyacrylamide Gel in the running chamber and fill with 1x TBE Buffer.  </li>
+        <li> Clean all wells with 1x TBE Buffer and prerun the gel at 200V for 15 minutes.  </li>
+        <li> While the gel preruns, prepare the gel inputs as follows:  </li>
+	<ol type="a">
+	   <li> 19ntfl ddC input: 3ul 100uM 19ntfl ddC DNA + 15 ul NFH2O + 18 ul 2x loading buffer.  </li>
+	   <li> 36ntfl ddC input: 3ul 100uM 36ntfl ddC DNA + 15 ul NFH2O + 18 ul 2x loading buffer.   </li>
+	</ol>
+        <li> Heat the inputs at 80C for 90 seconds.  </li>
+        <li> Clean the gel wells one final time with 1x TBE Buffer.  </li>
+        <li> Load 12ul of the prepared marker inputs into the preran 15% TBE Urea Polyacrylamide Gel. There should be 3 wells for each marker.  </li>
+        <li> Run the gel at 100-115 V.  </li>
+        <ol type="a">
+           <li> The gel is run at a low voltage to ensure good movement. The current should be as close to 0 as possible.   </li>
+           <li> The run should last &gt; 2 hours </li>
+
+	</ol>
+        <li> Cut bands out over blue light source. The method in cutting the band will greatly depend on the bands at the time of the run:  </li>
+	<ol type="a">
+	    <li> Smeared bands = cut closer to the top of the band.  </li>
+	    <li> Markers present beneath the bands = cut closer to the top. </li>
+	    <li> No bands under the gel, but in a nice, sharp line = cut the entire band.  </li>
+	</ol>
+        <li> Combine the gel slices into 1.5 mL microcentrifuge tubes (3 per tube).  </li>
+        <li> Spin the tube down using a microcentrifuge.  </li>
+        <li> Crush the gel with a pestle and clean the pestle when adding 330ul gel extraction buffer.  </li>
+        <li> Incubate the markers for 30 min on dry ice.  </li>
+        <li> Incubate overnight covered in foil at room temperature on table top shaker or on the HulaShaker.  </li>
+
+	<br>
+	<u>Day 2</u>
+        <li> Spin down the marker slurry with a microcentrifuge. </li>
+        <li> Cut the tip off a low retention, DNAse and RNase free 1000 uL pipette tip with cleaned scissors and transfer all slurry to 0.22um spin filter tube.  </li>
+        <li> Spin the filtered tube for 1.5 min at 13,000x G using a table top centrifuge.  </li>
+        <li> Transfer the elution to a non-low bind 1.5 ml tube.  </li>
+        <li> Bring volumes to 330 ul with gel extraction buffer.  </li>
+        <li> To each tube, add 1.5ul glyco blue and 1 mL of cold 100% Ethanol. Cf = 300mM sodium acetate, 75% Ethanol  </li>
+        <li> Allow for overnight precipitation in -20C. Note that Longer precipitation times ensure greater yield.  </li>
+	<br>
+	<u>Day 3 </u>
+        <li> Spin the precipitated markers for 1 hour at 20,000x g with a table top centrifuge set at 4C.  </li>
+        <li> Carefully remove the supernatant without disrupting the pellet.  </li>
+        <li> Spin the markers a couple of times to remove any excess ethanol.  </li>
+        <li> Allow the pellets to dry by storing them sideways to prevent contaminants from entering the tube. Note: do not let the pellets overdry! This is characterized by its translucent color.  </li>
+        <li> Resuspend the pellets in 15 uL of nuclease free water and let sit for 10-15 minutes, or until the pellet has completely dissolved in the water.  </li>
+        <li> Transfer the 15 uL of resuspended markers into a DNA Low-Bind 1.5 mL microcentrifuge tube. If there are multiple tubes for a single marker, combine the resuspended pellets into the same tube.
+  </li>
+        <li> Bring the final volumes up to 50 uL .  </li>
+        <li> Heat for 2 minutes at 70 C, then immediately move to ice.  </li>
+        <li>  Check concentrations on nanodrop: Example concentrations are 19ntfl ddC DNA 41.9ng/ul; A260/A280: 1.56; A260/A230: 1.27 and 36ntfl ddC DNA 73.1ng/ul; A260/A280: 1.56; A260/A230: 1.27.  </li>
+        <li> Prepare 5uM stocks of the markers based on their nanodrop concentrations and molecular weights provided by the manufacturer.  </li>
+        <li> Check again on nanodrop and calculate the final molarity.  </li>
+        <li> Aliquot the markers into DNA Low-Bind tubes to avoid the freeze-thaw cycle.  </li>
+    </ol>    
+
+
+
 
     <li class="subpheader" >Mold setup for Ribo-ITP chips</li>
-    <i> ?? Write protocol here for how to do the initial setup of the molds  ??  </i>
-
+    <ol type="1">
+        <li> Create a mold tray by folding a sheet of aluminum foil into (LxWxH) 10cm x 13.5 cm x 3 cm </li>
+	<img src="/img/protocols/riboitp/mold_setup2.jpg">
+	<img src="/img/protocols/riboitp/mold_setup1.jpg">
+        <li> Line the outer edge of the ITP chip mold to guide where the chip will be cut and removed. </li>
+	<li> Pour out 100g of the PDMS monomer and 10g of the curing agent and desiccate the mixture as outlined in the <i>Manufacturing Ribo-ITP chips</i> section. </li>
+        <li> Once the desiccation is complete, align three ITP chip molds in the aluminum foil tray and pour the entirety of the mixture on top. </li>
+        <li> Ensure the molds lie flat at the bottom of the tray with no bubbles present underneath. Gently press on the molds to squeeze out any air bubbles  </li>
+        <li> Desiccate the mixture until all the bubbles have been removed.  </li>
+        <li> Incubate at 50C overnight or until the PDMS is no longer sticky.  </li>
+        <li> Remove the chips according to the Manufacturing Ribo-ITP chips section.  </li>
+    </ol>
 
     <li class="subpheader" >Manufacturing Ribo-ITP chips</li>
     <ol type="1">
