@@ -22,7 +22,7 @@ subtitle:
 
 
 <center>
-	<font size="+4"><b>RIBOsome profiling via IsoTachoPhoresis (Ribo-ITP)</b></font><br>
+	<font size="+4"><b><t style="color:#bf5700;">RIBO</t>some profiling via <t style="color:#bf5700;">I</t>so<t style="color:#bf5700;">T</t>acho<t style="color:#bf5700;">P</t>horesis (<t style="color:#bf5700;">Ribo-ITP</t>)</b></font><br>
 	<font size="+2">Detailed online protocol</font><br>
 Version 1, January 20, 2022
 </center>
@@ -108,8 +108,86 @@ Version 1, January 20, 2022
   <ol type="A">
 
     <li class="subpheader" >Buffer preparation</li>
-    A table for buffers used in Ribo-ITP is available in a spreadsheet <a href="img/protocols/riboitp/itp_buffers.xlsx">here</a>.
+
+    A printable version of the following table is also provided <a href="img/protocols/riboitp/itp_buffers.xlsx">here</a>.
   
+    <br><br>
+   <table style='font-size:70%'>
+       <tr style="background-color:#f7b57e">
+          <th>Buffer</th>
+          <th>Section</th>
+          <th>Final Concentration</th>
+	  <th>Preparation</th>
+       </tr>
+
+       <tr>
+         <td>Gel Extraction Buffer</td>
+         <td>DNA Marker Purification</td>
+         <td>300 mM Sodium Acetate, 1 mM EDTA, 0.25% SDS, pH 5.2 </td>
+         <td>3M Sodium Acetate, pH 5.2- 300 uL, 500 mM EDTA- 6 uL,                        20% SDS- 37.5 uL,                             NF-H2O- 2,656.5 uL </td>
+       </tr>
+       <tr>
+         <td>BisTris-HCl Master Mix </td>
+         <td>Buffer Preparation  </td>
+         <td>130mM BisTris and 20mM HCl in a solution with Vf=1  </td>
+         <td>2.5M BisTris- 4940 uL, 6M HCl- 316.35 uL</td>
+       </tr>
+       <tr>
+         <td>1M BisTris titrated to 7.2  </td>
+         <td>Buffer Preparation  </td>
+         <td>1M BisTris and 220mM HCl </td>
+         <td>BisTris- 10.462 g, NF-H2O- 30 mL, 6M HCl- 1820 uL, NF-H2O- To final volume of 50 mL, </td>
+       </tr>
+       <tr>
+         <td>Lysis Buffer Stock  </td>
+         <td>Sample Preparation </td>
+         <td>20 mM BisTris, 1% Triton X-100, 5 mM MgCl2, 5 mM MgCl2, 100 mM NaCl, 4.4 mM HCl  </td>
+         <td>1M BisTris titrated to 7.2- 600 uL, 1M CaCl2- 150 uL, 10% Triton x-100- 3 mL, 1M MgCl2- 150 uL, 5M NaCl- 600 uL, NFH2O- 25.5 mL </td>
+       </tr>
+       <tr>
+         <td>  Storage Buffer </td>
+         <td> Chip Preparation </td>
+         <td> 130 mM BisTris, 20 mM HCl, 0.5% PVP </td>
+         <td> BisTris HCl Master Mix- 55.33 uL, 10% PVP- 50 uL, NFH2O- 894.7 uL </td>
+       </tr>
+       <tr>
+         <td> 10% Polyacrylamide  </td>
+         <td> Chip Preparation </td>
+         <td> 10% polyacrylamide, 130 mM BisTris, 8M urea, 0.5% VA-086, 20 mM HCl  </td>
+         <td> Urea- 0.4806 g, VA-086- 0.0050 g, 40% acrylamide/bisacrylamide- 250 uL, BisTris HCl Mastermix- 55.33 uL, NFH2O- ~306.6 uL </td>
+       </tr>
+       <tr>
+         <td>5% Polyacrylamide  </td>
+         <td>Chip Preparation  </td>
+         <td>5% polyacrylamide, 130 mM BisTris, 8M urea, 0.5% VA-086, 20 mM HCl  </td>
+         <td>Urea- 0.4806 g, VA-086- 0.0050 g, 40% acrylamide/bisacrylamide- 125 uL, BisTris HCl Mastermix- 55.33 uL, NFH2O- ~432 uL </td>
+       </tr>
+       <tr>
+         <td> Reservoir LE Buffer  </td>
+         <td> ITP Run  </td>
+         <td> 25% Pluronic Acid, 50mM HCl, 200mM BisTris </td>
+         <td> 6M HCl- 208.33 uL, 2.5M BisTris- 2 mL, Pluronic F127- 6.25 g, NFH2O- 10 mL, Spin in Cold Room until Pluronic is dissolved NFH2O- To final volume of 25 mL </td>
+       </tr>
+       <tr>
+         <td> MOPS TEp Buffer  </td>
+         <td> ITP Run </td>
+         <td> 25% Pluronic Acid, 100mM MOPS, 200mM BisTris </td>
+         <td> 1M MOPS- 2.5 mL, 2.5M BisTris- 2 mL, Pluronic F127- 6.25 g, NFH2O- 15 mL, Spin in Cold Room until Pluronic is dissolved, NFH2O- To final volume of 25 mL </td>
+       </tr>
+       <tr>
+         <td> Running Buffer  </td>
+         <td> ITP Run  </td>
+         <td> Final contents: 130mM BisTris, 20mM HCl, 0.1% PVP  </td>
+         <td> BisTris HCl Master Mix- 55.33 uL,	10% PVP- 10 uL, NFH2O- ~934.67 uL  </td>
+       </tr>
+       <tr>
+         <td> Sample Dilution Buffer  </td>
+         <td> ITP Run  </td>
+         <td>  Final contents: 10.667M Urea, 130 mM BisTris, 20 mM HCl, 2.67% PVP </td>
+         <td> Urea- 0.64 g, 10% PVP- 267 uL, BisTris HCl Mastermix- 55.33 uL, NFH2O- ~145 uL  </td>
+       </tr>
+    </table>
+   
     <li class="subpheader" >Gel purification of fluorescent DNA oligonucleotides</li>
 
     <ol type="1">
@@ -136,6 +214,7 @@ Version 1, January 20, 2022
 	    <li> Smeared bands = cut closer to the top of the band.  </li>
 	    <li> Markers present beneath the bands = cut closer to the top. </li>
 	    <li> No bands under the gel, but in a nice, sharp line = cut the entire band.  </li>
+	    <li> UV light sources should not be used when cutting.</li>
 	</ol>
         <li> Combine the gel slices into 1.5 mL microcentrifuge tubes (3 per tube).  </li>
         <li> Spin the tube down using a microcentrifuge.  </li>
@@ -177,7 +256,7 @@ Version 1, January 20, 2022
         <li> Create a mold tray by folding a sheet of aluminum foil into (LxWxH) 10cm x 13.5 cm x 3 cm </li>
 	<img src="/img/protocols/riboitp/mold_setup2.jpg">
 	<img src="/img/protocols/riboitp/mold_setup1.jpg">
-        <li> Line the outer edge of the ITP chip mold to guide where the chip will be cut and removed. </li>
+        <li> Using a permanent marker, line the outer edge of the ITP chip mold to guide where the chip will be cut and removed. </li>
 	<li> Pour out 100g of the PDMS monomer and 10g of the curing agent and desiccate the mixture as outlined in the <i>Manufacturing Ribo-ITP chips</i> section. </li>
         <li> Once the desiccation is complete, align three ITP chip molds in the aluminum foil tray and pour the entirety of the mixture on top. </li>
         <li> Ensure the molds lie flat at the bottom of the tray with no bubbles present underneath. Gently press on the molds to squeeze out any air bubbles  </li>
@@ -327,7 +406,7 @@ Version 1, January 20, 2022
     <i> *Use this method if performing Ribo-ITP with mouse oocytes or embryos. </i>
 
     <ol type="1">
-        <li> Refer to Bill Shawlot’s methods described in Mouse oocyte isolation and the In vitro fertilization (IVF) using CAST/EiJ sperm sections in Single cell quantification of ribosome occupancy in early mouse development.  </li>
+	    <li> We refer to the methods section of our manuscript, <a href="https://www.biorxiv.org/content/10.1101/2021.12.07.471408v1">Single cell quantification of ribosome occupancy in early mouse development</a>, for Mouse oocyte isolation and In vitro fertilization (IVF) using CAST/EiJ sperm </li> 
 
         <ol type="a">
 	    <li> GV and MII collected from C57BL/6J mice (female).  </li>
