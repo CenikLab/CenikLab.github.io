@@ -399,7 +399,30 @@ Version 1, January 20, 2022
 	<li> Wash cells once with 1x phosphate buffered saline (PBS) then resuspend in 1 ml PBS. </li>
 	<li> Pellet cells in PBS at 300 g for 10 min. </li>
 	<li> Remove PBS and resuspend pellet in Lysis Buffer Working Solution to get desired cell concentration in a final volume of 5 μL. We used a dilution equivalent to 100 cells in 5 μL of buffer.  </li>
-	<li> To generate ribosome protected fragments, proceed to the section titled “Nuclease digestion for generation of ribosome protected fragments (RPFs) from diluted cell culture lysate”.  </li>
+	<li> To generate ribosome protected fragments, proceed to the section titled <a href="#nucleasedigestiondiluted">“Nuclease digestion for generation of ribosome protected fragments (RPFs) from diluted cell culture lysate”</a>.</li>
+    </ol>
+
+    <li class="subpheader" >Fluorescence-Activated Cell Sorting (FACS) for cell culture </li>
+    <i> *use this method if performing Ribo-ITP with sorted K562 cells  </i>
+    <ol type="1">
+       <li> Grow K562 cells in media containing RPMI 1640, 10% FBS, 2 mM Glutamine (Gibco) and
+penicillin/streptomycin (Sigma). </li>
+       <li>Pellet the cells at 300g for 5 minutes.</li>
+       <li>Wash once with 1x PBS and resuspend in ~1x10 6 cells/mL of PBS. </li>
+       <li>Pass the cells through a strainer cap to achieve a single cell suspension. </li>
+       <li>Prepare a LoBind Eppendorf 96-well PCR plate for cell sorting by adding 5 uL of Lysis Buffer
+Working Solution to required wells. </li>
+       <li>Seal the plate with a PCR plate adhesive and spin the plate down in a table top centrifuge set at
+4C for 5 minutes at 300g. Spin for an additional 5 minutes if bubbles remain. </li>
+       <li>Keep the plates on ice until FACS. </li>
+       <li>Move the 96-well prepared PCR plate to the front right corner of the FACS machine plate holder. </li>
+       <li>Define single cells by gating with FSC-A/SSCA, SSA-H/SSW, FSCA/FSCH and FSCA-
+histogram for bigger cells and follow with cell sorting. </li>
+       <li>Seal the plate with a PCR plate adhesive seal and immediately dip in liquid nitrogen. </li>
+       <li>Move plates for immediate processing onto ice. Store plates to be processed at a later time in -
+80C. </li>
+       <li> To generate ribosome protected fragments, proceed to the section titled <a href="#nucleasedigestionsorted">“Nuclease digestion for
+		       generation of ribosome protected fragments (RPFs) from sorted cells”</a>.</li>
     </ol>
 
     <li class="subpheader" > Preparation of mouse oocytes and embryos.  </li>
@@ -416,7 +439,7 @@ Version 1, January 20, 2022
 	<ol type="a">
 	    <li> This collection method minimizes the final buffer volume in the starting sample (&#60;1 μL each).  </li>
 	    <li> Upon collection, samples are added to low bind 0.2 ml PCR tubes (Axygen) and submerged in liquid nitrogen. Samples are immediately transferred to -80°C for storage until sample processing, which takes place as soon as possible. We have found that the sooner the samples are processed after collection, the better our data. For the mouse samples in the ITP paper, samples were processed within 24 – 48 of collection. </li>
-	    <li> To generate ribosome protected fragments, proceed to the section titled  “Nuclease digestion for generation of ribosome protected fragments (RPFs) from mouse oocytes, embryos” section.  </li>
+	    <li> To generate ribosome protected fragments, proceed to the section titled  <a href="#nucleasedigestionmouseoocytes">“Nuclease digestion for generation of ribosome protected fragments (RPFs) from mouse oocytes, embryos” section</a>.</li>
 	</ol>
     </ol>
     
@@ -467,7 +490,7 @@ Version 1, January 20, 2022
         <li> While waiting to perform ITP, cover the chips with a box or foil to protect from light. Chips are typically used within 30 min to 6 hours of preparation.  </li>
     </ol>
     
-    <li class="subpheader" > Nuclease digestion for generation of ribosome protected fragments (RPFs) from diluted cell culture lysate. </li>
+    <li class="subpheader" id="nucleasedigestiondiluted" > Nuclease digestion for generation of ribosome protected fragments (RPFs) from diluted cell culture lysate. </li>
     * <i>Digestion should be timed so that the incubation step ends right before loading it into the lysate channel</i><br>
     **<i> When preparing ~6 samples in a day, process three at a time through digestion and ITP, then repeat digestion for the next three samples.  </i>
 
@@ -484,7 +507,24 @@ Version 1, January 20, 2022
        <li> Keep lysate on ice until Ribo-ITP. </li> 
 
     </ol>
-    <li class="subpheader" > Nuclease digestion for generation of ribosome protected fragments (RPFs) from mouse oocytes, embryos.  </li>
+    
+    <li class="subpheader"  id="nucleasedigestionsorted">Nuclease digestion for generation of ribosome protected fragments (RPFs) from sorted cells </li>
+    <i>Digestion should be timed so that the incubation step ends right before loading it into the lysate channel.</i><br>
+    <i>When preparing ~6 samples in a day, process three at a time through digestion and ITP, then repeat
+digestion for the next three samples. </i>
+    <ol type="1">
+       <li>Dilute MNase stock [2000 U/μL] (NEB). Dilute 1:150 in lysis buffer for sorted single cell
+experiments by adding 2 μl MNase stock to 298 μl lysis buffer. </li>
+       <li>Add 1 μl of the diluted MNase to the lysate, seal the PCR plate with a PCR plate adhesive. </li>
+       <li>Spin the plate down in a table top centrifuge set at 4C for 2 minutes at 2,000g. </li>
+       <li>Immediately incubate the digestion reaction at 37C for 28 minutes. </li>
+       <li>Dilute EGTA to 70 mM in lysis buffer and keep on ice. </li>
+       <li>Add 1 μl of EGTA [70 mM] solution to the lysate to a final concentration of 10 mM and pipette
+to mix. </li>
+       <li>Keep lysate on ice until Ribo-ITP. </li>
+    </ol>
+
+    <li class="subpheader" id="nucleasedigestionmouseoocytes"> Nuclease digestion for generation of ribosome protected fragments (RPFs) from mouse oocytes, embryos.  </li>
     <ol type="1">
        <li> Add 6 μl of Lysis Buffer Working Solution directly to the frozen droplet and place it on a cold block on ice.   </li>
        <ol type="a">
@@ -533,7 +573,7 @@ Version 1, January 20, 2022
 	   <li>In a typical run, the starting voltage was ~250 V. The voltage initially decreases then increases as resistance in the channel becomes greater.
  </li>
 	   <li>In an ideal run, we expect the marker DNAs to concentrate as a sharp band in the 5% PA gel. Upon entering the 10% PA gel, two bands (representative of each DNA marker) are expected to form.</li>
-	   <li> Watch out for the timing of the DNA concentration. We expect the DNA to reach the 5% PA boundary by ~10 min. At the 13–14-minute mark, it should reach the 10% interface. Around 17 minutes, the first marker should be nearing the elution well. After cleaning well and exchanging the collection buffer for Diagenode Dephosphorylation Buffer (DB), sample elution is expected to take ~2 min. A typical run should take ~20-25 minutes. 
+	   <li> Watch out for the timing of t/he DNA concentration. We expect the DNA to reach the 5% PA boundary by ~10 min. At the 13–14-minute mark, it should reach the 10% interface. Around 17 minutes, the first marker should be nearing the elution well. After cleaning well and exchanging the collection buffer for Diagenode Dephosphorylation Buffer (DB), sample elution is expected to take ~2 min. A typical run should take ~20-25 minutes. 
   </li>
 	   <li> A good run will have minimal curvature of the DNA bands, and the two bands should separate more as they travel through the 10% PA gel.
   </li>
