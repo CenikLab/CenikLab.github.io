@@ -27,6 +27,7 @@ navbar-links:
    - Alumni: "alumni.html"
   Software:
     - Ribo: "https://ribosomeprofiling.github.io/"
+    - satmut_utils: "https://github.com/CenikLab/satmut_utils"
   Publications:
    - Selected Publications: "publications.html"
    - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
