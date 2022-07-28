@@ -30,7 +30,7 @@ navbar-links:
     - satmut_utils: "https://github.com/CenikLab/satmut_utils"
   Publications:
    - Selected Publications: "publications.html"
-   - Pubmed: "https://www.ncbi.nlm.nih.gov/pubmed/?term=cenik+c"
+   - Pubmed: "https://pubmed.ncbi.nlm.nih.gov/?term=cenik+c&sort=date"
    - Google Scholar: "https://scholar.google.com/citations?user=DedRqJIAAAAJ"
   Research: "research"
   Join Us: "jobs"
