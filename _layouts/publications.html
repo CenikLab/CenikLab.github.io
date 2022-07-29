@@ -32,7 +32,7 @@ img {
 
     <div class="col-lg-8  col-md-10 ">
 
-      {% for pub in site.publications_software %}
+      {% for pub in site.publications_software reversed %}
          {{ counter }} - {{ pub.authors }}.
          <a href= {{ pub.link }} >{{ pub.title }}</a>.
          {{ pub.journal }}. {{ pub.year }} {{ pub.month }};
