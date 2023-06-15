@@ -5,9 +5,8 @@ refactor: true
 
 {% include lang.html %}
 
-<h1>This is a test header</h1>
-<p>Some text</p>
-
+<!-- <h1>This is a test header</h1>
+<p>Some text</p> -->
 
 {% assign pinned = site.posts | where: 'pin', 'true' %}
 {% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
@@ -15,7 +14,6 @@ refactor: true
 {% assign posts = '' | split: '' %}
 
 <!-- Get pinned posts -->
-{{paginator}}
 {% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
 {% assign pinned_num = pinned.size | minus: offset %}
 

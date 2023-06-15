@@ -1,0 +1,17 @@
+---
+layout: page
+refactor: true
+fullwidth: false
+---
+
+<div>
+    {% for page in site.research %}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-title">{{page.title}}</h3>
+            <p class="card-text">{{page.summary}}</p>
+            <a href="{{page.url}}" class="btn-secondary">Learn More</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
