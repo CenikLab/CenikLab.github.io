@@ -1,5 +1,4 @@
 ---
-layout: team-list
 name: Marc L. Salit
 image: /img/collaborators/marc_salit.jpg
 im_width: 160

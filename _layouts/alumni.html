@@ -1,0 +1,20 @@
+---
+layout: page
+refactor: false
+fullwidth: true
+---
+
+<div class="row masonry-grid">
+    {% for person in site.alumni %}
+        <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+            <div class="card person-card mb-3">
+                <img class="card-img-top" src="{{person.image}}" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title mb-0">{{ person.name }}</h3>
+                    <strong class="team-title">{{ person.title }}</strong>
+                    {{ person | markdownify }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

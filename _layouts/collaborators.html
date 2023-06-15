@@ -1,0 +1,27 @@
+---
+layout: page
+refactor: false
+fullwidth: true
+---
+
+<div class="row masonry-grid">
+    {% for collaborator in site.collaborators %}
+        <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+            <div class="card person-card mb-3">
+                <img class="card-img-top" src="{{collaborator.image}}" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title mb-0">
+                        <a target="_blank" href="{{collaborator.website}}">
+                            {{ collaborator.name }}
+                        </a>
+                    </h3>
+                    <p class="team-title mb-0"><i>{{ collaborator.university }}</i></p>
+                    {% if collaborator.PI %}
+                    <p class="team-title mb-1"><strong>PI: {{ collaborator.PI }}</strong></p>
+                    {% endif %}
+                    {{ collaborator | markdownify }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

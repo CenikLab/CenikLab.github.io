@@ -1,5 +1,4 @@
 ---
-layout: team-list
 name: Stanford Microfluidics Lab
 PI: Juan Santiago
 image: /img/collaborators/juan_santiago.jpg

@@ -1,5 +1,4 @@
 ---
-layout: team-list
 name: Crystal Han
 image: /img/collaborators/crystal_han-2.jpeg
 im_width: 100

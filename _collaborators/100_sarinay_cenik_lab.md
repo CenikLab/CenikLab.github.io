@@ -1,5 +1,4 @@
 ---
-layout: team-list
 name: SarinayCenik Lab
 PI: Elif Sarinay Cenik
 image: /img/collaborators/elif_sarinaycenik.jpg

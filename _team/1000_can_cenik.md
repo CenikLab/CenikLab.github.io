@@ -1,14 +1,12 @@
 ---
-layout: team-list
 name: Can Cenik
 title: Principal Investigator
 interests: everything
 image: /img/team/can_cenik.jpeg
 im_width: 160
 #im_height: 160
-description:
- Can enjoys playing the piano and chess for fun. He likes to listen to music and spend time with his wife who is also a faculty member at UT. <a href="https://www.sarinayceniklab.org/">Here is more information about her research</a>.
 ---
+Can enjoys playing the piano and chess for fun. He likes to listen to music and spend time with his wife who is also a faculty member at UT. <a href="https://www.sarinayceniklab.org/">Here is more information about her research</a>.
 * 2012 - 2018, Stanford University, School of Medicine   
 Postdoctoral Fellow, Genetics.   
 Advisor: Dr. Michael P. Snyder   
