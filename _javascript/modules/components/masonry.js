@@ -1,6 +1,6 @@
 export function loadGrid() {
   const gridElement = $('.masonry-grid');
-  if (gridElement) {
+  if (gridElement.length) {
     const grid = $('.masonry-grid').masonry({
       percentPosition: true
     });
