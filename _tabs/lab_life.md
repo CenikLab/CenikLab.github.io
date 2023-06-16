@@ -5,6 +5,11 @@ title: Lab Life
 icon: fas fa-umbrella-beach
 order: 4
 ---
+<!-- 2023 -->
+We celebrated Ian's Genome Biology paper playing Secret Hitler! 
+<img src="/img/lab_life/2023/ian_paper.jpg">
+
+<br> 
 
 <!-- 2022 -->
 
