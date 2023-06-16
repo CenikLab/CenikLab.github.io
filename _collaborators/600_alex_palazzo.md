@@ -1,5 +1,4 @@
 ---
-layout: team-list
 name:  Alex Palazzo
 image: /img/collaborators/alex_palazzo.jpg
 im_width: 160

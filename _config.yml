@@ -1,276 +1,211 @@
-# --- General options --- #
+# The Site Configuration
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
+# Import the theme
+theme: jekyll-theme-chirpy
 
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://ceniklab.github.io"
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
 baseurl: ""
 
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
 
-# Of course don't forget to change the username and projectname to YOUR username and project
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: America/Chicago
 
-# Name of website
-title: Cenik Lab
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
 
-# Short description of your site
-description: Translation Control and Functional Genomics
+title: Cenik Lab # the main title
 
-# --- Navigation bar options --- #
+tagline: Translation Control and Functional Genomics # it will display as the sub-title
 
-# List of links in the navigation bar
-navbar-links:
-  Team:
-   - Lab Members: "team.html"
-   - Lab Life: "lab_life.html"
-   - Collaborators: "collaborators.html"
-   - Alumni: "alumni.html"
-  Software:
-    - Ribo: "https://ribosomeprofiling.github.io/"
-    - satmut_utils: "https://github.com/CenikLab/satmut_utils"
-  Publications:
-   - Selected Publications: "publications.html"
-   - Pubmed: "https://pubmed.ncbi.nlm.nih.gov/?term=cenik+c&sort=date"
-   - Google Scholar: "https://scholar.google.com/citations?user=DedRqJIAAAAJ"
-  Research: "research"
-  Join Us: "jobs"
-  Contact: "contact"
+description: >- # used by seo meta and the atom feed
+  Translation Control and Functional Genomics
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-# avatar: "/img/avatar-icon.png"
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: "https://ceniklab.github.io"
 
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-title-img: img/logo.svg
-title-img-link: https://www.utexas.edu/
+github:
+  username: CenikLab # change to your github username
 
+twitter:
+  username: CenikLab # change to your twitter username
 
-# --- Background colour/image options --- #
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: Cenik Lab
+  email: ccenik@austin.utexas.edu # change to your email address
+  email_: ccenik [at] austin [dot] utexas [dot] edu
+  links:
+    # The first element serves as the copyright owner's link
+    - https://twitter.com/CenikLab # change to your twitter homepage
+    - https://github.com/CenikLab # change to your github homepage
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+    - https://www.linkedin.com/in/can-cenik-021b3451/
 
-# Personalize the colors in your website. Colour values can be any valid CSS colour
+google_site_verification: # fill in to your verification string
 
-# Original
-# navbar-col: "#F5F5F5"
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
 
-## !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-## ORIGINAL COLORS are COMMENTED
+google_analytics:
+  id: UA-120211245-1 # fill in your Google Analytics ID
+  # Google Analytics pageviews report settings
+  pv:
+    proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
+    cache_path: # the local PV cache data, friendly to visitors from GFW region
 
-#navbar-col: "#e6ebf4"
-navbar-col: "#151863"
-#navbar-text-col: "#404040"
-navbar-text-col: "#f5f2ed"
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
+theme_mode: light # [light|dark]
 
-#Original
-#navbar-children-col: "#F5F5F5"
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+img_cdn: ""
 
-#navbar-children-col: "#f5f7fa"
-# navbar-children-col: "#8999e0"
-navbar-children-col: "#cf9463"
+# the avatar on sidebar, support local or CORS resources
+avatar: "/img/Mol_Biosciences.png"
 
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0761ad"
+# boolean type, the global switch for TOC in posts.
+toc: true
 
-#Original
-#footer-col: "#F5F5F5"
-#fdf6f1
-#footer-col: "#e6ebf4"
+comments:
+  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  # The active options are as follows:
+  disqus:
+    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping: # optional, default to 'pathname'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
 
-#footer-text-col: "#777777"
-#footer-link-col: "#404040"
-footer-col: "#151863"
-footer-text-col: "#f5f2ed"
-footer-link-col: "#008AFF"
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: true # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env: # [development|production]
 
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
+pwa:
+  enabled: false # the option for PWA feature
 
-#navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
+paginate: 10
+paginate_path: "/posts/page:num/"
 
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Can Cenik
-
-# Select your active Social Network Links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
-# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-network-links:
-#  rss: true
-  email: "ccenik@austin.utexas.edu"
-  github: CenikLab
-  linkedin: can-cenik-021b3451
-#  telephone: +14159998888
-  twitter: CenikLab
-
-# Select which share links to show in posts
-share-links-active:
-  twitter: false
-  facebook: false
-  google: false
-  linkedin: false
-
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "CenikLab"
-
-# --- Web Statistics Section --- #
-
-# Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-120211245-1"
-
-# Google Tag Manager ID
-#gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
-
-# --- Misc --- #
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
-
-# Excerpt Word Length
-# Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
-markdown: kramdown
-highlighter: rouge
-permalink: none
-paginate: 5
+# ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
-  input: GFM
-
-# Default YAML values (more information on Jekyll's site)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "page"
-      show-avatar: true
-
-# Use tags index page and make tags on each post clickable
-link-tags: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 collections:
-  publications_other:
+  tabs:
     output: true
-  publications_cancer:
-    output: true
-  publications_functional_genomics:
-    output: true
-  publications_RBP:
-    output: true
-  publications_software:
-    output: true
-  publications_translation_control:
-    output: true
+    sort_by: order
   team:
     output: true
-  collaborators:
+  publications:
     output: true
   alumni:
     output: true
+  collaborators:
+    output: true
+  research:
+    output: true
 
-# Exclude these files from production site
-exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Dockerfile
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - Vagrantfile
+defaults:
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
 
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
   ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+    envs: [development]
 
-gems:
-  jekyll-maps
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - rollup.config.js
+  - node_modules
+  - package*.json
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-maps
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

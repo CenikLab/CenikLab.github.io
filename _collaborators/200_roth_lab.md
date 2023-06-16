@@ -1,5 +1,4 @@
 ---
-layout: team-list
 name: Roth Lab
 PI: Fritz Roth
 image: /img/collaborators/fritz_roth.jpg
