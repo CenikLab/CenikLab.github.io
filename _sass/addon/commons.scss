@@ -1624,3 +1624,7 @@ $btn-mb: 0.5rem;
     object-fit: contain;
   }
 }
+
+#post-list > a {
+  border-bottom: 0;
+}
