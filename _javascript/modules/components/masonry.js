@@ -9,5 +9,9 @@ export function loadGrid() {
     grid.imagesLoaded().progress(function () {
       grid.masonry('layout');
     });
+
+    // layout masonry on init
+    grid.masonry('layout');
+    $(() => grid.masonry('layout'))
   }
 }
