@@ -184,7 +184,8 @@ sass:
 compress_html:
   clippings: all
   comments: all
-  # endings: all # this was messing with the ribo_itp page's formatting
+  # endings: all 
+  # this was messing with the ribo_itp page's formatting
   profile: false
   blanklines: false
   ignore:
