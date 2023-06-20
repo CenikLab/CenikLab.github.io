@@ -17,7 +17,5 @@ Postdoctoral Fellow, Bioinformatics
 PhD, Applied Mathematics   
 * 2005-2008, Middle East Technical University   
 MS, Applied Mathematics  
-* 2002-2006, Middle East Technical University   
-BS, Computer Engineering      
-* 2001-2005, Middle East Technical University   
-BS, Mathematics
+* 2001-2006, Middle East Technical University   
+BS, Computer Engineering and Mathematics

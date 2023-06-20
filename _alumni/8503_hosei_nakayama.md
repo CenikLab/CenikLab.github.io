@@ -8,4 +8,4 @@ im_height: 160
 ---
 
 Hosei was a UT undergraduate from Japan, interested in genetics and computer science.
-He is passionate about cooking, video games, and anime. Hosei currently works at Baylor College of Medicine in Dr. Rinki Ratnapriya's lab. 
+Hosei currently works at Baylor College of Medicine as a research associate.

@@ -8,8 +8,6 @@ im_height: 160
 ---
 Daniela currently works at Thermo Fisher.
 
-* 2018-2019, Princeton University  
-Postdoctoral Fellow, Molecular Biology  
 * 2011-2018, Princeton University  
 PhD, Molecular Biology  
 * 2006-2011, The University of Texas at El Paso  
