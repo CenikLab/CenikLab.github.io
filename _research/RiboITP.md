@@ -3,7 +3,7 @@ layout: page
 title: Single cell ribosome profiling for characterizing translation in development, cancer and immunology
 html: True
 image: /img/publications/Sankey.png
-summary: We developed a novel microfluidic isotachophoresis method (Ribo-ITP) to measure ribosome occupancy from ultra-low input samples including single cells. Here, we characterized transcriptome-wide ribosome occupancy during early mouse development.
+summary: We developed a novel microfluidic isotachophoresis method (Ribo-ITP) to measure ribosome occupancy from ultra-low input samples including single cells.
 permalink: /lab_research-riboitp
 ---
 
