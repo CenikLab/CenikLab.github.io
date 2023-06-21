@@ -1,9 +1,9 @@
 ---
 layout: page
-title: A computational ecosystem to understand translational control
+title: A computational framework to understand translational control
 html: True
 permalink: /lab_research-ribo-ecosystem
-summary: We have designed a dedicated binary hierarchical data format to efficiently store, organize and process ribosome profiling data, as well as a computational ecosystem around it.
+summary: We develop machine learning models to integrate quantitative measurements of translation into cohesive, predictive frameworks.
 ---
 
 <center>
