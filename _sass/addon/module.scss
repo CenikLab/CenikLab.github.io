@@ -8,6 +8,7 @@
   color: var(--heading-color);
   font-weight: 400;
   font-family: $font-family-heading;
+  line-height: 1.5;
 }
 
 %section {
@@ -107,7 +108,7 @@
 }
 
 %sidebar-links {
-  color: rgba(117, 117, 117, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

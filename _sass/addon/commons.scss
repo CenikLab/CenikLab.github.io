@@ -820,22 +820,23 @@ $btn-mb: 0.5rem;
       }
 
       a.dropdown-item {
-          @include pt-pb(0.6rem);
-          font-weight: 400;
+        @include pt-pb(0.6rem);
+        font-weight: 400;
         i {
           font-size: 95%;
           opacity: 0.8;
           margin-right: 1.5rem;
         }
 
-          span {
-            font-size: 90%;
-            letter-spacing: 0.2px;
-            margin-left: calc(1.5rem + 19px);
-          }
+        span {
+          font-size: 90%;
+          letter-spacing: 0.2px;
+          margin-left: calc(1.5rem + 19px);
+        }
       }
 
-      &.active, & ul.dropdown-menu li.active {
+      &.active,
+      & ul.dropdown-menu li.active {
         .nav-link {
           color: var(--sidebar-active-color);
           background-color: var(--sidebar-hover-bg);
@@ -1627,4 +1628,12 @@ $btn-mb: 0.5rem;
 
 #post-list > a {
   border-bottom: 0;
+}
+
+.logo-img {
+  width: 100%;
+  background: rgb(255, 255, 255, 0.85);;
+  padding: 1rem;
+  padding-right: 2rem;
+  border-radius: 0.75rem;
 }

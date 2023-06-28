@@ -36,10 +36,10 @@
   );
 
   /* Sidebar */
-  --sidebar-bg: #f6f8fa;
-  --sidebar-muted-color: #a2a19f;
-  --sidebar-active-color: #1d1d1d;
-  --sidebar-hover-bg: rgb(227, 227, 227, 0.64);
+  --sidebar-bg: radial-gradient(circle, #1b65b0 0%, #1f59cc 100%);
+  --sidebar-muted-color: whitesmoke;
+  --sidebar-active-color: white;
+  --sidebar-hover-bg: rgba(227, 227, 227, 0.208);
   --sidebar-btn-bg: white;
   --sidebar-btn-color: #8e8e8e;
   --avatar-border-color: white;
