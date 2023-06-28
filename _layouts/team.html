@@ -8,7 +8,8 @@ fullwidth: true
     {% for person in site.team %}
         <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
             <div class="card person-card mb-3">
-                <img class="card-img-top" src="{{person.image}}" alt="Photo of {{person.name}}">
+                <img class="card-img-top" src="{{person.image}}" alt="{{person.name}}"
+                    height="350" width="350">
 
                 {% if person.image %}
                     {% if person.image.lqip %}

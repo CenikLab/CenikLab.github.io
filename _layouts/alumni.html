@@ -8,7 +8,8 @@ fullwidth: true
     {% for person in site.alumni %}
         <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
             <div class="card person-card mb-3">
-                <img class="card-img-top" src="{{person.image}}" alt="Card image cap">
+                <img class="card-img-top" src="{{person.image}}" alt="{{ collaborator.name }}" 
+                    height="350" width="350">
                 <div class="card-body">
                     <h3 class="card-title mb-0">{{ person.name }}</h3>
                     <strong class="team-title">{{ person.title }}</strong>
