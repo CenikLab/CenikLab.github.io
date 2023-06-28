@@ -96,6 +96,21 @@ link: https://pubmed.ncbi.nlm.nih.gov/?term=cenik+c&sort=date
 
 `_javascript` contains some small bits of JS that initialize parts of the site. For example, I added a masonry grid plugin that needed to be initialized here. If you update these in development you'll need to run an `npm run build` to see your changes.
 
+### Update Page Shennanigans
+This theme originally displayed the posts collection, along with pagination, on the homepage. We wanted to move displaying this collection, along with pagination, to another tab. To get this to work with Jekyll's built in pagination, a lot of things had to be changed.
+
+- Changing some settings in config.yml:
+```yaml
+paginate: 10
+paginate_path: "/lab_updates/page:num/"
+paginate_root: "/lab_updates" # this is not used by the paginate plugin but custom defined for use in this project
+```
+- Creating a dummy "Updates" tab that actually links to "/lab_updates"
+- Creating a simple [lab_updates/index.html](lab_updates/index.html) page so Jekyll recognizes it as a valid place to inject pagination information.
+
+
+In addition to these changes, hardcoded parts of the theme templates that make checks to do something if the `page.layout == 'home'` also had to be modified. Not all of these were changed, and depending on how the site is updated, more of these hardcoded values might need changing. Of special note is the [_includes/js-selector.html](_includes/js-selector.html) file, which decides to load certain pieces of important initialization code depending on which page the user is on.
+
 ## Deploying the site
 The site is built and deployed automatically to Github Pages upon a push to the master branch using Github Actions. [The build script](.github/workflows/pages-deploy.yml) essentially runs the JS and Jekyll build commands and deploys the site.
 
@@ -122,17 +137,4 @@ the [Wiki][wiki].
 [mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
 
 
-### Update Page Shennanigans
-This theme originally displayed the posts collection, along with pagination, on the homepage. We wanted to move displaying this collection, along with pagination, to another tab. To get this to work with Jekyll's built in pagination, a lot of things had to be changed.
 
-- Changing some settings in config.yml:
-```yaml
-paginate: 10
-paginate_path: "/lab_updates/page:num/"
-paginate_root: "/lab_updates" # this is not used by the paginate plugin but custom defined for use in this project
-```
-- Creating a dummy "Updates" tab that actually links to "/lab_updates"
-- Creating a simple [lab_updates/index.html](lab_updates/index.html) page so Jekyll recognizes it as a valid place to inject pagination information.
-
-
-In addition to these changes, hardcoded parts of the theme templates that make checks to do something if the `page.layout == 'home'` also had to be modified. Not all of these were changed, and depending on how the site is updated, more of these hardcoded values might need changing. Of special note is the [_includes/js-selector.html](_includes/js-selector.html) file, which decides to load certain pieces of important initialization code depending on which page the user is on.
