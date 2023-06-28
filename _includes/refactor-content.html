@@ -158,7 +158,7 @@
     <!-- Bypass the HTML-proofer test -->
     {% assign _left = _left | append: ' data-proofer-ignore' %}
 
-    {% if page.layout == 'home' %}
+    {% if page.layout == 'home' or page.layout == 'updates' %}
       <!-- create the image wrapper -->
       {%- capture _wrapper_start -%}
         <div class="preview-img {{ _class | strip }}">

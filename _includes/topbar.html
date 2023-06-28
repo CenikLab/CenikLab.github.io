@@ -24,6 +24,11 @@
           {% elsif forloop.last %}
             {% if page.collection == 'tabs' %}
               <span>{{ site.data.locales[include.lang].tabs[item] | default: page.title }}</span>
+            {% elsif page.layout == 'post' %}
+              <span>
+                <a href="{{ '/lab_updates/' | relative_url }}">Lab Updates</a>
+              </span>
+              <span>{{ page.title }}</span>
             {% else %}
               <span>{{ page.title }}</span>
             {% endif %}
