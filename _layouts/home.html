@@ -1,9 +1,27 @@
 ---
 layout: page
-refactor: true
+refactor: false
 ---
 
 {% include lang.html %}
 
-<h1>This is a test header</h1>
-<p>Some text</p>
+{{ content | markdownify }}
+
+<h2>Our Research Interests</h2>
+
+<div>
+    {% for page in site.research %}
+    <div href="{{page.url}}" class="card mb-4 post-preview h-100 position-relative">
+        <div class="card-body">
+            <h3 class="card-title">{{page.title}}</h3>
+            <p class="card-text">{{page.summary}}</p>
+            <a href="{{page.url}}" class="stretched-link">Learn More</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<h2>Updates From the Lab</h2>
+{% include related-posts.html lang=lang disable_related_posts_header=true num_posts=6 %}
+<a href="/lab_updates/" class="btn btn-outline-primary">Read More Updates</a>
