@@ -13,7 +13,8 @@
               {{ site.avatar | relative_url }}
             {% endif %}
           {% endcapture %}
-        <img src="{{ avatar_url | strip }}" width="100%" class="pe-3" alt="avatar" onerror="this.style.display='none'">
+        <img src="{{ avatar_url | strip }}" width="220" class="pe-3" height="64" alt="avatar" onerror="this.style.display='none'"
+        style="width: 100%;">
       {% endif %}
     </a>
 
