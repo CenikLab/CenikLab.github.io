@@ -28,7 +28,7 @@ JEKYLL_ENV=production jekyll build
 ```
 
 ## Updating the site
-`_posts` includes markdown files representing small pieces of news. These are currently displayed on the Home page.
+`_posts` includes markdown files representing small pieces of news. These are currently displayed on the Updates page.
 
 `_alumni`, `_collaborators`, `_team`, `_research`, and `_publication` are site collections that keep track of data in markdown files similar to `_posts`
 
@@ -96,7 +96,7 @@ link: https://pubmed.ncbi.nlm.nih.gov/?term=cenik+c&sort=date
 
 `_javascript` contains some small bits of JS that initialize parts of the site. For example, I added a masonry grid plugin that needed to be initialized here. If you update these in development you'll need to run an `npm run build` to see your changes.
 
-### Update Page Shennanigans
+### Updates Page Shennanigans
 This theme originally displayed the posts collection, along with pagination, on the homepage. We wanted to move displaying this collection, along with pagination, to another tab. To get this to work with Jekyll's built in pagination, a lot of things had to be changed.
 
 - Changing some settings in config.yml:
@@ -110,6 +110,19 @@ paginate_root: "/lab_updates" # this is not used by the paginate plugin but cust
 
 
 In addition to these changes, hardcoded parts of the theme templates that make checks to do something if the `page.layout == 'home'` also had to be modified. Not all of these were changed, and depending on how the site is updated, more of these hardcoded values might need changing. Of special note is the [_includes/js-selector.html](_includes/js-selector.html) file, which decides to load certain pieces of important initialization code depending on which page the user is on.
+
+### How to add pictures to the Lab Life page
+Previously, new images were added by adding markup to the [lab_life.md](_tabs/lab_life.md) file. Now, the images are displayed in a carousel. To add images to this carousel, prepend them to the list of objects in the front matter of [lab_life.md](_tabs/lab_life.md). For example:
+
+```yaml
+images:
+  - src: "/img/lab_life/2023/ian_paper.jpg" # path to image
+    caption: "We celebrated Ian's Genome Biology paper playing Secret Hitler!" # caption corresponding to image
+  - src: "/img/lab_life/2022/ceniklab_hike_oct_18_2022.jpg"
+    caption: "We opened the hiking season with the San Gabriel Trail."
+...
+```
+The actual markdown contents of the file do not do anything anymore, and are kept for reference only.
 
 ## Deploying the site
 The site is built and deployed automatically to Github Pages upon a push to the master branch using Github Actions. [The build script](.github/workflows/pages-deploy.yml) essentially runs the JS and Jekyll build commands and deploys the site.
