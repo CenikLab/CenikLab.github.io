@@ -3,7 +3,8 @@ $(function () {
     rewind: true,
     keyboard: true,
     type: 'fade',
-    heightRatio: 0.82,   // TODO make this look good on mobile
+    width: "100%",
+    height: "65vh",
     pagination: false,
     lazyLoad: 'nearby'
     // arrows: false,
