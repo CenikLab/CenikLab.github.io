@@ -50,7 +50,7 @@
 
               {% for sub_tab_name in tab.sub_pages %}
                 {% assign sub_tab = site.tabs | where: "title", sub_tab_name | first %}
-                <li class="{% if sub_tab.url == page.url %}{{ " active" }}{% endif %}">
+                <li class="mb-1{% if sub_tab.url == page.url %}{{ " active" }}{% endif %}">
                   <a href="{{ sub_tab.link | (default: sub_tab.url | relative_url) }}" 
                     class="dropdown-item nav-link">
                     {% capture sub_tab_name %}{{ sub_tab.url | split: '/' }}{% endcapture %}

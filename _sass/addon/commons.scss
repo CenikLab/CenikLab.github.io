@@ -1638,3 +1638,7 @@ $btn-mb: 0.5rem;
 .pheader, .subpheader  {
   font-family: $font-family-heading;
 }
+
+.object-fit-contain {
+  object-fit: contain;
+}

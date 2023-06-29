@@ -42,5 +42,6 @@ export default [
   build('categories'),
   build('page'),
   build('post'),
-  build('misc')
+  build('misc'),
+  build('lab_life')
 ];

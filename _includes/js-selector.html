@@ -66,7 +66,7 @@ or page.layout == 'updates' %}
 {% include jsdelivr-combine.html urls=urls %}
 
 {% case page.layout %}
-  {% when 'home', 'categories', 'post', 'page' %}
+  {% when 'home', 'categories', 'post', 'page', 'lab_life' %}
     {% assign js = page.layout %}
   {% when 'archives', 'category', 'tag' %}
     {% assign js = 'misc' %}
@@ -80,6 +80,11 @@ or page.layout == 'updates' %}
 <script defer src="{{ script | relative_url }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+{% if page.layout == 'lab_life' %}
+<script src="/assets/lib/splide/splide.min.js"></script>
+<link href="/assets/lib/splide/splide.min.css" rel="stylesheet">
+{% endif %}
 
 {% if page.math %}
   <!-- MathJax -->
