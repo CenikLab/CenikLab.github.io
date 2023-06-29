@@ -9,7 +9,7 @@ To develop locally you'll need to:
 - Install Ruby dependencies with `bundle install`
 - Install Node.js dependencies with `npm install`
 
-Alternatively, you can try developing the site in a Docker devcontainer with VS Code. The associated configuration details are in this repo under [.devcontainer](.devcontainer), and essentially go through the above steps but inside a container.
+Alternatively, you can develop the site in a Docker devcontainer with VS Code. The associated configuration details are in this repo under [.devcontainer](.devcontainer), and essentially go through the above steps but inside a container. However, you might find performance suffers when developing under this approach. The build when running on a Windows laptop takes 10-20 seconds, while inside a devcontainer takes 150-180 seconds.
 
 ### Serve the site in development
 ```
@@ -26,6 +26,10 @@ If you want to simulate a production build, make sure to set the production flag
 ```
 JEKYLL_ENV=production jekyll build
 ```
+
+### Note for windows development
+The Windows way of setting environment variables before running a command works differently than it does on nix machines. `npm run build-win` will run a production Node build command in a Windows compatible way. To do a Jekyll production build, run `set JEKYLL_ENV=production && 
+jekyll build`.
 
 ## Updating the site
 `_posts` includes markdown files representing small pieces of news. These are currently displayed on the Updates page.
@@ -92,7 +96,14 @@ link: https://pubmed.ncbi.nlm.nih.gov/?term=cenik+c&sort=date
 ```
 
 ### Customizing the Site Theme
-`_sass` contains styling for the site. If you want to modify or add CSS rules, look here.
+`_sass` contains styling for the site. If you want to modify or add CSS rules, look here. There are global color variables you can modify to quickly change the look and feel of the site. Try to modify these instead of adding new styling rules when possible. For example, an excerpt from [the light theme color scheme](_sass/colors/light-typography.scss) that was customized:
+```scss
+/* Sidebar */
+--sidebar-bg: radial-gradient(circle, #1b65b0 0%, #1f59cc 100%);
+--sidebar-muted-color: whitesmoke;
+--sidebar-active-color: white;
+--sidebar-hover-bg: rgba(227, 227, 227, 0.208);
+```
 
 `_javascript` contains some small bits of JS that initialize parts of the site. For example, I added a masonry grid plugin that needed to be initialized here. If you update these in development you'll need to run an `npm run build` to see your changes.
 
@@ -125,7 +136,7 @@ images:
 The actual markdown contents of the file do not do anything anymore, and are kept for reference only.
 
 ## Deploying the site
-The site is built and deployed automatically to Github Pages upon a push to the master branch using Github Actions. [The build script](.github/workflows/pages-deploy.yml) essentially runs the JS and Jekyll build commands and deploys the site.
+The site is built and deployed automatically to Github Pages upon a push to the master branch using Github Actions. [The build script](.github/workflows/pages-deploy.yml) essentially runs the JS and Jekyll build commands, with production flags, and deploys the site.
 
 ---
 
