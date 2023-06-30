@@ -1646,6 +1646,8 @@ $btn-mb: 0.5rem;
   font-family: $font-family-heading;
 }
 
-.object-fit-contain {
+.slider-image {
   object-fit: contain;
+  height: 100%;
+  max-height: calc(100% - 40px);
 }

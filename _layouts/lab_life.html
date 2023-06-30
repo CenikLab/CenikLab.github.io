@@ -8,9 +8,8 @@ refactor: false
         <ul class="splide__list">
             {% for image in page.images %}
             <li class="splide__slide d-flex align-items-center justify-content-center bg-dark flex-column">
-                <img data-splide-lazy="{{image.src}}" class="h-100 object-fit-contain" alt="{{image.caption}}">
+                <img data-splide-lazy="{{image.src}}" class="slider-image" alt="{{image.caption}}">
                 <div class="text-light my-3 mx-5 text-center">{{image.caption}}</div>
-
             </li>
             {% endfor %}
         </ul>
