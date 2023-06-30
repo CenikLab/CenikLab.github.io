@@ -1,85 +1,151 @@
-<div align="center">
+# Cenik Lab Website
 
-  # Chirpy Jekyll Theme
+Website for the Cenik Lab at the University of Texas at Austin, built using the Chirpy Jekyll Theme.
 
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+## Local Development Prerequisites
+To develop locally you'll need to:
+- Install [Jekyll](https://jekyllrb.com/docs/installation/) (which includes Ruby and bundler, Ruby's package manager)
+- Install [Node.js version 18.x](https://nodejs.org/en/download). (Try earlier versions at your own risk, I had to update from 16.x to get it working.)
+- Install Ruby dependencies with `bundle install`
+- Install Node.js dependencies with `npm install`
 
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
-  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml)
-  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)](https://www.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cotes2020/jekyll-theme-chirpy&amp;utm_campaign=Badge_Grade)
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
-  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
+Alternatively, you can develop the site in a Docker devcontainer with VS Code. The associated configuration details are in this repo under [.devcontainer](.devcontainer), and essentially go through the above steps but inside a container. However, you might find performance suffers when developing under this approach. The build when running on a Windows laptop takes 10-20 seconds, while inside a devcontainer takes 150-180 seconds.
 
-  [**Live Demo →**][demo]
+### Serve the site in development
+```
+bundle exec jekyll serve
+```
+If you update the JS files for some reason to customize the theme, you might have to run an `npm run build` for your changes to propagate.
 
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
+### Build the site for production
+```
+npm run build
+bundle exec jekyll build
+```
+If you want to simulate a production build, make sure to set the production flag when building the Jekyll site. This will apply minifcation to the site files.
+```
+JEKYLL_ENV=production jekyll build
+```
 
-</div>
+### Note for windows development
+The Windows way of setting environment variables before running a command works differently than it does on nix machines. `npm run build-win` will run a production Node build command in a Windows compatible way. To do a Jekyll production build, run `set JEKYLL_ENV=production && 
+jekyll build`.
 
-## Features
+## Updating the site
+`_posts` includes markdown files representing small pieces of news. These are currently displayed on the Updates page.
 
-<details>
-  <summary>
-    <i>Click to view features</i>
-  </summary>
-  <p>
+`_alumni`, `_collaborators`, `_team`, `_research`, and `_publication` are site collections that keep track of data in markdown files similar to `_posts`
 
-  - Dark / Light Theme Mode
-  - Localized UI language
-  - Pinned Posts
-  - Hierarchical Categories
-  - Trending Tags
-  - Table of Contents
-  - Last Modified Date of Posts
-  - Syntax Highlighting
-  - Mathematical Expressions
-  - Mermaid Diagram & Flowchart
-  - Dark / Light Mode Images
-  - Embed Videos
-  - Disqus / Utterances / Giscus Comments
-  - Search
-  - Atom Feeds
-  - Google Analytics
-  - Page Views Reporting
-  - SEO & Performance Optimization
+`_posts2` is a list of example posts that came with the theme. They are not deployed, but are simply in the repo for reference.
 
-  </p>
-</details>
+### Modifying layouts
+`_layouts` control the actual templates that match up to each page. Here's an example of a newly added layout
 
-## Documentation
+```yaml
+---
+# when adding a new layout, you probably want to extend upon the page layout
+layout: page 
+
+# The theme does some weird refactoring to images. If it causes you problems, you can turn it off.
+refactor: false
+
+# By default, the content of the page sits in the middle, with a list of recently updated posts displayed on the right. If you set fullwidth to true, the content of the page will fill up the whole width.
+fullwidth: true
+---
+```
+
+### Modifying tabs
+Tabs are controlled using the `_tabs` collection. The Chirpy theme did not originally support have nested subtabs, so this feature was implemented. Here's an example of a tab definition.
+
+```yaml
+---
+# this represents the layout in _layouts to show for this page
+layout: publications 
+
+# this is the font awesome icon that shows in the sidebar
+icon: fas fa-book-open 
+
+# this is the ordering in the sidebar
+order: 2 
+
+# If a tab has subtabs define them here
+# You must use the exact title of the subtab
+sub_pages:
+    - Selected Publications
+    - Pubmed 
+    - Google Scholar
+---
+```
+
+Define each subtab in a seperate md file. In the subtab, you'll want to do some additional configuration. Let's look at the Pubmed subtab.
+
+```yaml
+---
+# this ensures that the theme doesn't render this as a top level tab
+hidden: true 
+
+# order here doesn't really mean anything, but jekyll will complain if we don't specify an order here
+order: -1 
+
+# Title to display for the subtab. This must match with the listing in the sub_pages of the tab this is under.
+title: Pubmed 
+
+# Optionally, if you want the tab to link to an external site, add a link property
+link: https://pubmed.ncbi.nlm.nih.gov/?term=cenik+c&sort=date
+---
+```
+
+### Customizing the Site Theme
+`_sass` contains styling for the site. If you want to modify or add CSS rules, look here. There are global color variables you can modify to quickly change the look and feel of the site. Try to modify these instead of adding new styling rules when possible. For example, an excerpt from [the light theme color scheme](_sass/colors/light-typography.scss) that was customized:
+```scss
+/* Sidebar */
+--sidebar-bg: radial-gradient(circle, #1b65b0 0%, #1f59cc 100%);
+--sidebar-muted-color: whitesmoke;
+--sidebar-active-color: white;
+--sidebar-hover-bg: rgba(227, 227, 227, 0.208);
+```
+
+`_javascript` contains some small bits of JS that initialize parts of the site. For example, I added a masonry grid plugin that needed to be initialized here. If you update these in development you'll need to run an `npm run build` to see your changes.
+
+### Updates Page Shennanigans
+This theme originally displayed the posts collection, along with pagination, on the homepage. We wanted to move displaying this collection, along with pagination, to another tab. To get this to work with Jekyll's built in pagination, a lot of things had to be changed.
+
+- Changing some settings in config.yml:
+```yaml
+paginate: 10
+paginate_path: "/lab_updates/page:num/"
+paginate_root: "/lab_updates" # this is not used by the paginate plugin but custom defined for use in this project
+```
+- Creating a dummy "Updates" tab that actually links to "/lab_updates"
+- Creating a simple [lab_updates/index.html](lab_updates/index.html) page so Jekyll recognizes it as a valid place to inject pagination information.
+
+
+In addition to these changes, hardcoded parts of the theme templates that make checks to do something if the `page.layout == 'home'` also had to be modified. Not all of these were changed, and depending on how the site is updated, more of these hardcoded values might need changing. Of special note is the [_includes/js-selector.html](_includes/js-selector.html) file, which decides to load certain pieces of important initialization code depending on which page the user is on.
+
+### How to add pictures to the Lab Life page
+Previously, new images were added by adding markup to the [lab_life.md](_tabs/lab_life.md) file. Now, the images are displayed in a carousel. To add images to this carousel, prepend them to the list of objects in the front matter of [lab_life.md](_tabs/lab_life.md). For example:
+
+```yaml
+images:
+  - src: "/img/lab_life/2023/ian_paper.jpg" # path to image
+    caption: "We celebrated Ian's Genome Biology paper playing Secret Hitler!" # caption corresponding to image
+  - src: "/img/lab_life/2022/ceniklab_hike_oct_18_2022.jpg"
+    caption: "We opened the hiking season with the San Gabriel Trail."
+...
+```
+The actual markdown contents of the file do not do anything anymore, and are kept for reference only.
+
+## Deploying the site
+The site is built and deployed automatically to Github Pages upon a push to the master branch using Github Actions. [The build script](.github/workflows/pages-deploy.yml) essentially runs the JS and Jekyll build commands, with production flags, and deploys the site.
+
+---
+
+
+## Theme Documentation
 
 To explore usage, development, and upgrade guide of the project, please refer to
 the [Wiki][wiki].
 
-## Contributing
-
-Welcome to report bugs, help improve the code or submit new features.
-For more information, please see the ["Contributing Guidelines"][contribute-guide].
-
-## Credits
-
-This theme is mainly built with [Jekyll][jekyllrb] ecosystem,
-[Bootstrap][bootstrap], [Font Awesome][icons] and some other [wonderful tools][lib].
-The avatar and favicon design come from [Clipart Max][image].
-
-Thanks to all the [contributors][contributors]. Also, folks who submitted issues
-or unmerged PRs should not be forgotten. Because they reported bugs, shared ideas,
-or inspired me to write more readable documentation.
-
-Last but not least, thanks to [JetBrains][jetbrains] for providing the
-_Open Source Development_ license.
-
-## Sponsoring
-
-If you'd like to sponsor this project, the following options are available.
-
-[![Ko-fi](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/coteschung)
-[![Wechat Pay](https://img.shields.io/badge/-Tip%20Me%20on%20WeChat-brightgreen?logo=wechat&logoColor=white)][donation]
-[![Alipay](https://img.shields.io/badge/-Tip%20Me%20on%20Alipay-blue?logo=alipay&logoColor=white)][donation]
-
-## License
-
-This work is published under [MIT][mit] License.
 
 [jekyllrb]: https://jekyllrb.com/
 [bootstrap]: https://getbootstrap.com/
@@ -93,3 +159,6 @@ This work is published under [MIT][mit] License.
 [jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
 [donation]: https://sponsor.cotes.page/
 [mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
+
+
+

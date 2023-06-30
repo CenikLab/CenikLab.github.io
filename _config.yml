@@ -118,7 +118,8 @@ pwa:
   enabled: false # the option for PWA feature
 
 paginate: 10
-paginate_path: "/posts/page:num/"
+paginate_path: "/lab_updates/page:num/"
+paginate_root: "/lab_updates"
 
 # ------------ The following options are not recommended to be modified ------------------
 

@@ -5,6 +5,9 @@
 
 <!-- The total size of related posts -->
 {% assign TOTAL_SIZE = 3 %}
+{% if include.num_posts %}
+{% assign TOTAL_SIZE = include.num_posts %}
+{% endif %}
 
 <!-- An random integer that bigger than 0 -->
 {% assign TAG_SCORE = 1 %}
@@ -75,9 +78,11 @@
 
 {% if index_list.size > 0 %}
   <div id="related-posts" class="mb-2 mb-sm-4">
+    {% unless include.disable_related_posts_header %}
     <h3 class="pt-2 mb-4 ms-1" data-toc-skip>
       {{ site.data.locales[include.lang].post.relate_posts }}
     </h3>
+    {% endunless %}
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       {% for entry in index_list %}
         {% assign index = entry | plus: 0 %}

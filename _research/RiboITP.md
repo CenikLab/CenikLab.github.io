@@ -7,20 +7,6 @@ summary: We developed a novel microfluidic isotachophoresis method (Ribo-ITP) to
 permalink: /lab_research-riboitp
 ---
 
-
-<style type="text/css">
-  /* body {
-    background-color: #000000;
-    font-color: #FFFFFF
-  }
-  p {
-    color: #D0E0E8
-  }
-  h1 {
-    color: #9BC3D5
-  } */
-</style>
-
 <center>
   <!-- <h1> Single cell quantification of ribosome occupancy in early mouse development </h1> -->
 </center>
@@ -39,4 +25,5 @@ We are thrilled to share a new ribosome profiling approach that leverages the pr
 <p>
 <i> 
 Translation regulation is critical for early mammalian embryonic development1. However, previous studies had been restricted to bulk measurements2 precluding precise determination of translation regulation including allele-specific analyses. To address this challenge, we developed a novel microfluidic isotachophoresis approach, named RIBOsome profiling via IsoTachoPhoresis (Ribo-ITP), and characterized translation in single oocytes and embryos during early mouse development. We identified differential translation efficiency as a key mechanism regulating genes involved in centrosome organization and N6-methyladenosine modification of RNAs. Our high coverage measurements enabled the first analysis of allele-specific ribosome engagement in early development and led to the discovery of stage-specific differential engagement of zygotic RNAs with ribosomes and reduced translation efficiency of transcripts exhibiting allelic-biased expression. By integrating our measurements with proteomics data, we discovered that ribosome occupancy in germinal vesicle stage oocytes is the predominant determinant of protein abundance in the zygote. The novel Ribo-ITP approach will enable numerous applications by providing high coverage and high resolution ribosome occupancy measurements from ultra-low input samples including single cells.
+</i>
 </p>

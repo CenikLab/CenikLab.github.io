@@ -768,7 +768,7 @@ $btn-mb: 0.5rem;
     color: rgba(134, 133, 133, 0.99);
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
-
+    font-family: $font-family-heading;
     a {
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
@@ -776,7 +776,7 @@ $btn-mb: 0.5rem;
   }
 
   .site-subtitle {
-    font-size: 95%;
+    font-size: 105%;
     color: var(--sidebar-muted-color);
     margin-top: 0.25rem;
     word-spacing: 1px;
@@ -820,22 +820,23 @@ $btn-mb: 0.5rem;
       }
 
       a.dropdown-item {
-          @include pt-pb(0.6rem);
-          font-weight: 400;
+        @include pt-pb(0.6rem);
+        font-weight: 400;
         i {
           font-size: 95%;
           opacity: 0.8;
           margin-right: 1.5rem;
         }
 
-          span {
-            font-size: 90%;
-            letter-spacing: 0.2px;
-            margin-left: calc(1.5rem + 19px);
-          }
+        span {
+          font-size: 90%;
+          letter-spacing: 0.2px;
+          margin-left: calc(1.5rem + 19px);
+        }
       }
 
-      &.active, & ul.dropdown-menu li.active {
+      &.active,
+      & ul.dropdown-menu li.active {
         .nav-link {
           color: var(--sidebar-active-color);
           background-color: var(--sidebar-hover-bg);
@@ -1415,7 +1416,7 @@ $btn-mb: 0.5rem;
       width: auto;
       &:last-child {
         &::before {
-          content: '-';
+          // content: '-';
           margin: 0 0.75rem;
           opacity: 0.8;
         }
@@ -1590,7 +1591,7 @@ $btn-mb: 0.5rem;
     .profile-wrapper {
       margin-top: 3.5rem;
       margin-bottom: 2.5rem;
-      padding-left: 3.5rem;
+      // padding-left: 3.5rem;
     }
 
     ul {
@@ -1627,4 +1628,26 @@ $btn-mb: 0.5rem;
 
 #post-list > a {
   border-bottom: 0;
+}
+
+.logo-img {
+  width: 100%;
+  padding-right: 1rem;
+  &.with-background {
+    background: rgb(255, 255, 255, 0.85);
+    padding: 1rem;
+    padding-right: 2rem;
+    border-radius: 0.75rem;
+  }
+}
+
+.pheader,
+.subpheader {
+  font-family: $font-family-heading;
+}
+
+.slider-image {
+  object-fit: contain;
+  height: 100%;
+  max-height: calc(100% - 40px);
 }

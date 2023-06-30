@@ -1,112 +1,27 @@
 ---
 layout: page
-refactor: true
+refactor: false
 ---
 
 {% include lang.html %}
 
-<!-- <h1>This is a test header</h1>
-<p>Some text</p> -->
+{{ content | markdownify }}
 
-{% assign pinned = site.posts | where: 'pin', 'true' %}
-{% assign default = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
+<h2>Our Research Interests</h2>
 
-{% assign posts = '' | split: '' %}
-
-<!-- Get pinned posts -->
-{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
-{% assign pinned_num = pinned.size | minus: offset %}
-
-{% if pinned_num > 0 %}
-  {% for i in (offset..pinned.size) limit: pinned_num %}
-    {% assign posts = posts | push: pinned[i] %}
-  {% endfor %}
-{% else %}
-  {% assign pinned_num = 0 %}
-{% endif %}
-
-<!-- Get default posts -->
-
-{% assign default_beg = offset | minus: pinned.size %}
-
-{% if default_beg < 0 %}
-  {% assign default_beg = 0 %}
-{% endif %}
-
-{% assign default_num = paginator.posts | size | minus: pinned_num %}
-{% assign default_end = default_beg | plus: default_num | minus: 1 %}
-
-{% if default_num > 0 %}
-  {% for i in (default_beg..default_end) %}
-    {% assign posts = posts | push: default[i] %}
-  {% endfor %}
-{% endif %}
-
-<div id="post-list">
-  {% for post in posts %}
-    <a href="{{ post.url | relative_url }}" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        {% if post.image %}
-          {% if post.image.lqip %}
-            {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
-          {% endif %}
-
-          {% assign src = post.image.path | default: post.image %}
-          {% unless src contains '//' %}
-            {% assign src = post.img_path | append: '/' | append: src | replace: '//', '/' %}
-          {% endunless %}
-
-          {% assign alt = post.image.alt | default: 'Preview Image' %}
-
-          <img src="{{ src }}" w="15" h="8" alt="{{ alt }}" {{ lqip }}>
-        {% endif %}
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            {{ post.title }}
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              {% include no-linenos.html content=post.content %}
-              {{ content | markdownify | strip_html | truncate: 200 | escape }}
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              {% include datetime.html date=post.date lang=lang %}
-
-              <!-- categories -->
-              {% if post.categories.size > 0 %}
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  {% for category in post.categories %}
-                    {{ category }}
-                    {%- unless forloop.last -%},{%- endunless -%}
-                  {% endfor %}
-                </span>
-              {% endif %}
-            </div>
-
-            {% if post.pin %}
-              <div class="pin ms-1">
-                <i class="fas fa-thumbtack fa-fw"></i>
-                <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-              </div>
-            {% endif %}
-          </div>
-          <!-- .post-meta -->
+<div>
+    {% for page in site.research %}
+    <div href="{{page.url}}" class="card mb-4 post-preview h-100 position-relative">
+        <div class="card-body">
+            <h3 class="card-title">{{page.title}}</h3>
+            <p class="card-text">{{page.summary}}</p>
+            <a href="{{page.url}}" class="stretched-link">Learn More</a>
         </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  {% endfor %}
+    </div>
+    {% endfor %}
 </div>
-<!-- #post-list -->
 
-{% if paginator.total_pages > 1 %}
-  {% include post-paginator.html %}
-{% endif %}
+
+<h2>Updates From the Lab</h2>
+{% include related-posts.html lang=lang disable_related_posts_header=true num_posts=6 %}
+<a href="/lab_updates/" class="btn btn-outline-primary">Read More Updates</a>

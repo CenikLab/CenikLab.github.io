@@ -13,7 +13,7 @@
               {{ site.avatar | relative_url }}
             {% endif %}
           {% endcapture %}
-        <img src="{{ avatar_url | strip }}" width="100%" class="pe-3" alt="avatar" onerror="this.style.display='none'">
+        <img src="{{ avatar_url | strip }}" width="220" class="logo-img with-background" height="86" alt="avatar" onerror="this.style.display='none'">
       {% endif %}
     </a>
 
@@ -50,7 +50,7 @@
 
               {% for sub_tab_name in tab.sub_pages %}
                 {% assign sub_tab = site.tabs | where: "title", sub_tab_name | first %}
-                <li class="{% if sub_tab.url == page.url %}{{ " active" }}{% endif %}">
+                <li class="mb-1{% if sub_tab.url == page.url %}{{ " active" }}{% endif %}">
                   <a href="{{ sub_tab.link | (default: sub_tab.url | relative_url) }}" 
                     class="dropdown-item nav-link">
                     {% capture sub_tab_name %}{{ sub_tab.url | split: '/' }}{% endcapture %}
@@ -61,8 +61,8 @@
             </ul>
           </li>
         {% else %}
-          <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
-            <a href="{{ tab.url | relative_url }}" class="nav-link">
+          <li class="nav-item{% if tab.url == page.url or tab.link == page.url%}{{ " active" }}{% endif %}">
+            <a href="{{ tab.link | (default: tab.url | relative_url) }}" class="nav-link">
               <i class="fa-fw {{ tab.icon }}"></i>
               {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
               <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
