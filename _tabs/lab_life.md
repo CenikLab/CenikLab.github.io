@@ -5,6 +5,8 @@ title: Lab Life
 icon: fas fa-umbrella-beach
 order: 4
 images:
+  - src: "/img/lab_life/2023/group_LabClimbing.jpg"
+    caption: "Bouldering at ABP; avoiding the summer heat wave."
   - src: "/img/lab_life/2023/ian_paper.jpg"
     caption: "We celebrated Ian's Genome Biology paper playing Secret Hitler!"
   - src: "/img/lab_life/2022/ceniklab_hike_oct_18_2022.jpg"
