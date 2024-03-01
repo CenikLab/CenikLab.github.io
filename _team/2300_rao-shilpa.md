@@ -5,11 +5,8 @@ interests: Wet Lab
 image: /img/team/shilpa-rao.jpg
 im_width: 160
 ---
-Currently, Shilpa is working on identifying novel translation regulators using genome-wide CRISPR
-screens in humans. Her doctoral study involved understanding translation regulation in the
-human parasite, Leishmania donovani. She would like to combine the two in future and
-identify factors that can be used for drug targeting and treat various pathogenesis. 
-In her free time, being with her kids gives Shilpa immense joy.
+Shilpa is interested in understanding different aspects of translation regulation.
+Outside the lab she enjoys cooking, biking and travelling.
 * 2009 - 2015, Pune University, Pune, Maharashtra, India  
 PhD Scholar
 * 2007 - 2009, Hislop College, Nagpur, Maharashtra, India      
