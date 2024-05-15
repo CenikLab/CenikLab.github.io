@@ -1,8 +1,8 @@
 ---
-title: Single cell quantification of ribosome occupancy in early mouse development 
-authors: Ozadam H*, Tonn T*,  Han C*, Segura A, Hoskins I, Rao S, Ghatpande V, Tran D, Catoe D, Salit M, <b>Cenik C</b>
-journal: Nature
-year: 2023
+title: Integrated multiplexed assays of variant effect reveal determinants of catechol-O-methyltransferase gene expression
+authors: Ian Hoskins, Shilpa Rao, Charisma Tante, <b>Cenik C</b>
+journal: National Library of Medicine
+year: 2024
 month: Jun
 vol: 
 pages: 
