@@ -5,6 +5,10 @@ title: Lab Life
 icon: fas fa-umbrella-beach
 order: 4
 images:
+  - src: "/img/lab_life/2024/PXL_20240711_232527468.MP.jpg"
+    caption: "Congradulations to Ian on receiving his PhD"
+  - src: "/img/lab_life/2024/20240520_162223.jpg"
+    caption: "Happy Birthday to Shilpa!"
   - src: "/img/lab_life/2023/group_LabClimbing.jpg"
     caption: "Bouldering at ABP; avoiding the summer heat wave."
   - src: "/img/lab_life/2023/LabClimb2.jpg"
