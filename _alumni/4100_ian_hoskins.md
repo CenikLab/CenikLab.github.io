@@ -1,6 +1,6 @@
 ---
 name: Ian Hoskins
-title: Graduate Student
+title: Postdoctoral Fellow
 interests: Computational & Wet Lab
 image: /img/team/ian_hoskins_new.jpg
 im_width: 160
