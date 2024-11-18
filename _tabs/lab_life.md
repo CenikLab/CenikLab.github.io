@@ -5,10 +5,12 @@ title: Lab Life
 icon: fas fa-umbrella-beach
 order: 4
 images:
+  - src: "/img/lab_life/2024/Shilpa_paper_published_2024.jpg"
+    caption: "Celebrating Dr. Shilpa's Reh1 paper publishment in Nature Communications"
   - src: "/img/lab_life/2024/Yue_grad.jpg"
-    caption: "Congradulations to Yue on receiving her PhD! ="
+    caption: "Congradulations to Dr. Yue on receiving her PhD!"
   - src: "/img/lab_life/2024/PXL_20240711_232527468.MP.jpg"
-    caption: "Congradulations to Ian on receiving his PhD!"
+    caption: "Congradulations to Dr. Ian on receiving his PhD!"
   - src: "/img/lab_life/2024/20240520_162223.jpg"
     caption: "Happy Birthday to Shilpa!"
   - src: "/img/lab_life/2023/group_LabClimbing.jpg"
