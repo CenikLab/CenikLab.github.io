@@ -1,6 +1,6 @@
 ---
 name: Yue Liu
-title: Graduate Student
+title: Postdoctoral Fellow
 interests: Computational & Wet Lab
 image: /img/team/yue_liu.jpg
 im_width: 160
