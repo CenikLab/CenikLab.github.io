@@ -5,6 +5,10 @@ title: Lab Life
 icon: fas fa-umbrella-beach
 order: 4
 images:
+  - src: "/img/lab_life/2025/New_neighbors.png"
+    caption: "Opening the future to fun memories with our new neighbors ~ Welcome Elif's Lab!"
+  - src: "/img/lab_life/2025/Yue_farewell.jpg"
+    caption: "Graduated, but never forgotten! We wish you the best in California Yue!"
   - src: "/img/lab_life/2024/Shilpa_paper_published_2024.jpg"
     caption: "Celebrating Dr. Shilpa's Reh1 paper publishment in Nature Communications"
   - src: "/img/lab_life/2024/Yue_grad.jpg"
