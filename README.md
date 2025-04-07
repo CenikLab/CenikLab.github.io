@@ -91,7 +91,7 @@ order: -1
 title: Pubmed 
 
 # Optionally, if you want the tab to link to an external site, add a link property
-link: https://pubmed.ncbi.nlm.nih.gov/?term=cenik+c&sort=date
+link: https://pubmed.ncbi.nlm.nih.gov/?term=cenik+c+NOT+thiebault&sort=date
 ---
 ```
 

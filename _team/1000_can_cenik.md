@@ -1,6 +1,6 @@
 ---
 name: Can Cenik
-title: Principal Investigator
+title: Associate Professor
 interests: everything
 image: /img/team/can_cenik.jpeg
 im_width: 160
