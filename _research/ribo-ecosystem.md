@@ -16,28 +16,23 @@ summary: We develop machine learning models to integrate quantitative measuremen
   </center>
 </p>
 
-mRNA translation can be measured transcriptome-wide by sequencing of mRNA
-fragments protected by ribosomes from RNase digestion.
-This approach, called ribosome profiling,
-poses unique computational challenges.
-Unlike RNA sequencing measurements,
-ribosome profiling data typically needs to be analyzed
-as a function of the read/footprint size.
-This results in significant bottlenecks in storage and processing,
-as many values need to be stored for each gene and experiment.
-While there are specialized solutions for other data modalities
-such as <a href="https://samtools.github.io/hts-specs/SAMv1.pdf">BAM</a> for sequence alignment,
-or <a href="https://cooler.readthedocs.io/en/latest/datamodel.html">Cooler</a> /
-<a href="https://github.com/aidenlab/juicer/wiki/Data">hic</a> for chromosome conformation capture  data,
-ribosome profiling experiments lacked a comparable dedicated and standardized format.
-We have recently designed a dedicated binary hierarchical data format to efficiently store,
-organize and process ribosome profiling data.
-We are building a computational ecosystem around this file format (<a href="https://academic.oup.com/bioinformatics/article/36/9/2929/5701654">.ribo</a>).
-We currently have a workflow that can generate these files starting
-from raw sequencing reads.
-The resulting file can be used seamlessly to analyze and visualize
-in our downstream analysis software. We continue to improve this ecosystem
-by adding ribosome profiling specific analyses such as improved algorithms
-for pause site detection. 
+<p>
+Accurately predicting gene expression across biological contexts requires reliable and reusable data.  Ribosome profiling has become a key method for measuring translation, but much of the existing data is scattered across general-purpose databases with poor metadata, limiting reuse and integrative analyses.
 
+To address this, we manually curated and uniformly reprocessed over 3,500 ribosome profiling experiments. These have been enabled by a computational ecosystem around a dedicated binary hierarchical data format to efficiently store,
+organize and process ribosome profiling data that we have developed<a href="https://academic.oup.com/bioinformatics/article/36/9/2929/5701654">we have developed</a>. This effort provided us with a large-scale, high-quality compendium of translation efficiency (TE) data across diverse biological conditions.
+</p>
+
+<p>
+Inspired by how co-expression of RNA reveals gene function and regulatory programs, we introduced the concept of translation efficiency covariation (TEC). TEC turns out to be a conserved and biologically meaningful signal, reflecting coordinated translational control. It also uncovers new regulatory mechanisms and can predict protein–protein interactions and gene functions. For instance, TEC revealed a novel regulator of glycolysis that was invisible to RNA expression and protein abundance analyses.
+</p>
+
+<p>
+We have also developed RiboNN, a deep neural network that predicts cell-type-specific translation efficiency from full-length mRNA sequences. Trained on our large compendium, RiboNN is the most accurate model of translation to date. Beyond prediction, the model reveals sequence features linked to translation, mRNA stability, and localization.
+
+These tools and insights open the door to new applications in synthetic biology and therapeutics. RiboNN can help interpret the effects of genetic variants on translation and guide the design of optimized mRNA-based therapies, with implications for both diagnostics and treatment of genetic diseases.
+</p>
+
+<p>
 We emphasize development of reusable, portable and open source software that will be widely distributed.
+</p>
