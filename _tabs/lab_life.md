@@ -5,6 +5,12 @@ title: Lab Life
 icon: fas fa-umbrella-beach
 order: 4
 images:
+  - src: "/img/lab_life/2025/Vighnesh_bday.jpeg"
+    caption: "Celebrating Vighnesh's Birthday, Happy Birthday!"
+  - src: "/img/lab_life/2025/Wild_flower_retreat_conf.jpg"
+    caption: "Lady Bird Johnson Wildflower Center Fun! ~ MBS Annual Retreat"
+  - src: "/img/lab_life/2025/Wild_flower_retreat.jpg"
+    caption: "Lady Bird Johnson Wildflower Center Fun! ~ MBS Annual Retreat"
   - src: "/img/lab_life/2025/New_neighbors.png"
     caption: "New neighbors, new memories--Welcome Dr.Sarinay's Lab!"
   - src: "/img/lab_life/2025/Yue_farewell.jpg"
