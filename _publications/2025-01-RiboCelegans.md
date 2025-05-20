@@ -8,7 +8,7 @@ vol:
 pages: 
 doi: 10.1101/2024.12.13.628416
 link:https://www.biorxiv.org/content/10.1101/2024.12.13.628416v3
-image: 
+image:  /img/publications/Shukla.jpg
 im_width: 70%
 im_height: 70%
 categories: [Translation Control]
