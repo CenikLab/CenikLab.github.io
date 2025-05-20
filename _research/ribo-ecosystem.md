@@ -24,11 +24,11 @@ organize and process ribosome profiling data that <a href="https://academic.oup.
 </p>
 
 <p>
-Inspired by how co-expression of RNA reveals gene function and regulatory programs, we introduced the concept of translation efficiency covariation (TEC). TEC turns out to be a conserved and biologically meaningful signal, reflecting coordinated translational control. It also uncovers new regulatory mechanisms and can predict protein–protein interactions and gene functions. For instance, TEC revealed a novel regulator of glycolysis that was invisible to RNA expression and protein abundance analyses (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11326257/">Liu et al.</a>).
+Inspired by how co-expression of RNA reveals gene function and regulatory programs, we introduced the concept of translation efficiency covariation (TEC). TEC turns out to be a conserved and biologically meaningful signal, reflecting coordinated translational control. It also uncovers new regulatory mechanisms and can predict protein–protein interactions and gene functions. For instance, TEC revealed a novel regulator of glycolysis that was invisible to RNA expression and protein abundance analyses (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11326257/">Liu et al. Nature Biotechnology, in press</a>).
 </p>
 
 <p>
-We have also developed RiboNN, a deep neural network that predicts cell-type-specific translation efficiency from full-length mRNA sequences (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11326250/">Zheng et al.</a>). Trained on our large compendium, RiboNN is the most accurate model of translation to date. Beyond prediction, the model reveals sequence features linked to translation, mRNA stability, and localization.
+We have also developed RiboNN, a deep neural network that predicts cell-type-specific translation efficiency from full-length mRNA sequences (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11326250/">Zheng et al. Nature Biotechnology, in press</a>). Trained on our large compendium, RiboNN is the most accurate model of translation to date. Beyond prediction, the model reveals sequence features linked to translation, mRNA stability, and localization.
 
 These tools and insights open the door to new applications in synthetic biology and therapeutics. RiboNN can help interpret the effects of genetic variants on translation and guide the design of optimized mRNA-based therapies, with implications for both diagnostics and treatment of genetic diseases.
 </p>

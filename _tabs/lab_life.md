@@ -8,7 +8,7 @@ images:
   - src: "/img/lab_life/2025/Vighnesh_bday.jpeg"
     caption: "Celebrating Vighnesh's Birthday, Happy Birthday!"
   - src: "/img/lab_life/2025/Wild_flower_retreat_conf.jpg"
-    caption: "Lady Bird Johnson Wildflower Center Fun! ~ MBS Annual Retreat"
+    caption: "Winner of Best Talk Award at MBS Retreat—third year in a row!"
   - src: "/img/lab_life/2025/Wild_flower_retreat.jpg"
     caption: "Lady Bird Johnson Wildflower Center Fun! ~ MBS Annual Retreat"
   - src: "/img/lab_life/2025/New_neighbors.png"
