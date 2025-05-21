@@ -11,5 +11,5 @@ link: https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinf
 image: /img/publications/2020_bioinfomatics.jpg
 im_width: 70%
 im_height: 70%
-publications: Software
+publications: Computational
 ---

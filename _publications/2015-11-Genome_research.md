@@ -11,5 +11,5 @@ link: https://genome.cshlp.org/content/25/11/1610.long
 image: /img/publications/TranslationVariation.jpg
 im_width: 70%
 im_height: 70%
-categories: [Translation Control]
+categories: Translation Control
 ---

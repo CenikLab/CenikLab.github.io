@@ -11,5 +11,5 @@ link: https://pubs.rsc.org/en/content/articlelanding/2019/lc/c9lc00311h
 image: /img/publications/Lab_Chip_ITP.jpeg
 im_width: 70%
 im_height: 70%
-categories: [Translation Control]
+categories: Translation Control
 ---

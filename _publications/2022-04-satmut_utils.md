@@ -11,5 +11,5 @@ link: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-02922-
 image: /img/publications/satmut_utils.jpg
 im_width: 70%
 im_height: 70%
-publications: Software
+publications: Computational
 ---

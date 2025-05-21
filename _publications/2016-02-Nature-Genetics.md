@@ -11,5 +11,5 @@ link: https://www.nature.com/articles/ng.3471
 image: /img/publications/CancerBioinformatics-01.jpg
 im_width: 70%
 im_height: 70%
-categories: [Cancer]
+categories: Computational
 ---

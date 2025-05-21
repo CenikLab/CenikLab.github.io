@@ -11,5 +11,5 @@ link: https://pubmed.ncbi.nlm.nih.gov/38355921/
 image: /img/publications/Integratedassay.jpg
 im_width: 70%
 im_height: 70%
-categories: [Translation Control]
+categories: Computational
 ---

@@ -11,5 +11,5 @@ link: https://www.nature.com/articles/s41586-023-06228-9
 image: /img/publications/ribo-itp_schema.jpg
 im_width: 70%
 im_height: 70%
-categories: [Translation Control]
+categories: Featured
 ---
