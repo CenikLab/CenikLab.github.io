@@ -10,21 +10,17 @@ summary: We develop machine learning models to integrate quantitative measuremen
 <!-- <h1> A computational ecosystem to understand translation</h1> -->
 </center>
 
-<p>
-  <center>
+<div style="text-align: center;">
   <img src="/img/publications/2020_bioinfomatics.jpg" alt="Ribo Ecosystem" style="width:400px;">
-  </center>
+</div>
+
+
+<p>
+Accurately predicting gene expression across biological contexts requires reliable and reusable data. We developed a software framework around a compact binary hierarchical data format to efficiently store, process (<a href="https://academic.oup.com/bioinformatics/article/36/9/2929/5701654"><em>Ozadam, Geng, and Cenik.</em> <em>Bioinformatics</em></a>), and visualize ribosome profiling data (<a href="https://academic.oup.com/bioinformatics/article/40/6/btae369/7696317"><em>Chacko, Ozadam, and Cenik.</em> <em>Bioinformatics</em></a>).
 </p>
 
 <p>
-Accurately predicting gene expression across biological contexts requires reliable and reusable data.  Ribosome profiling has become a key method for measuring translation, but much of the existing data is scattered across general-purpose databases with poor metadata, limiting reuse and integrative analyses.
-
-To address this, we manually curated and uniformly reprocessed over 3,500 ribosome profiling experiments. These have been enabled by a computational ecosystem around a dedicated binary hierarchical data format to efficiently store,
-organize and process ribosome profiling data that <a href="https://academic.oup.com/bioinformatics/article/36/9/2929/5701654">we have developed</a>. This effort provided us with a large-scale, high-quality compendium of translation efficiency (TE) data across diverse biological conditions.
-</p>
-
-<p>
-Inspired by how co-expression of RNA reveals gene function and regulatory programs, we introduced the concept of translation efficiency covariation (TEC). TEC turns out to be a conserved and biologically meaningful signal, reflecting coordinated translational control. It also uncovers new regulatory mechanisms and can predict protein–protein interactions and gene functions. For instance, TEC revealed a novel regulator of glycolysis that was invisible to RNA expression and protein abundance analyses (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11326257/">Liu et al. Nature Biotechnology, in press</a>).
+Using this infrastructure, we manually curated and uniformly reprocessed over 3,500 ribosome profiling experiments. This effort provided us with a large-scale, high-quality compendium of translation efficiency (TE) data across diverse biological conditions. Inspired by how co-expression of RNA reveals gene function and regulatory programs, we introduced the concept of translation efficiency covariation (TEC), a conserved property of mammalian transcriptomes, reflecting coordinated translational control. It also uncovers new regulatory mechanisms and can predict protein–protein interactions and gene functions. For instance, TEC revealed a regulator of glycolysis that was missed by RNA expression and protein abundance analyses (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11326257/">Liu et al. Nature Biotechnology, in press</a>).
 </p>
 
 <p>
@@ -34,5 +30,5 @@ These tools and insights open the door to new applications in synthetic biology 
 </p>
 
 <p>
-We emphasize development of reusable, portable and <a href="https://github.com/CenikLab/">open source software</a>.
+We emphasize the development of reusable, portable, and <a href="https://github.com/CenikLab/">open-source software</a>.
 </p>
