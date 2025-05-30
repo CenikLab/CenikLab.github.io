@@ -1,5 +1,5 @@
 ---
-title: Landscape and regulation of new protein translation in the early <i>C. elegans</i> embryo
+title: Landscape and regulation of mRNA translation in the early <i>C. elegans</i> embryo
 authors: Shukla Y, Ghatpande V, Hu CF, Dickinson DJ§, <b>Cenik C§</b>
 journal: Cell Reports
 year: 2025
