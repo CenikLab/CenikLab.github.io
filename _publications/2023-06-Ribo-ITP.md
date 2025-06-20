@@ -1,6 +1,6 @@
 ---
 title: Single cell quantification of ribosome occupancy in early mouse development 
-authors: Ozadam H*, Tonn T*,  Han C*, Segura A, Hoskins I, Rao S, Ghatpande V, Tran D, Catoe D, Salit M, <b>Cenik C</b>
+authors: Ozadam H*, Tonn T*,  Han C*, Segura A, Hoskins I, Rao S, Ghatpande V, Tran D, Catoe D, Salit M, <b>Cenik C§</b>
 journal: Nature
 year: 2023
 month: Jun

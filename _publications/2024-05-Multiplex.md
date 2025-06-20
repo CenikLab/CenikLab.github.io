@@ -1,6 +1,6 @@
 ---
 title: Integrated multiplexed assays of variant effect reveal determinants of catechol-O-methyltransferase gene expression
-authors: Ian Hoskins, Shilpa Rao, Charisma Tante, <b>Cenik C</b>
+authors: Ian Hoskins, Shilpa Rao, Charisma Tante, <b>Cenik C§</b>
 journal: Mol Syst Biol
 year: 2024
 month: Feb
