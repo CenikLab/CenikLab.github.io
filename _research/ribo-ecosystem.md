@@ -11,7 +11,7 @@ summary: We develop machine learning models to integrate quantitative measuremen
 </center>
 
 <div style="text-align: center;">
-  <img src="/img/publications/2020_bioinfomatics.jpg" alt="Ribo Ecosystem" style="width:400px;">
+  <img src="/img/publications/Cenik-NatureBio-Final.png" alt="Ribo Ecosystem" style="width:400px;">
 </div>
 
 
@@ -20,10 +20,10 @@ Predictive models of gene expression require reliable and reusable data. We deve
 </p>
 
 <p>
-Using this infrastructure, we manually curated and uniformly reprocessed over 3,500 ribosome profiling experiments. This effort yielded a high-quality compendium of translation efficiency measurements across diverse cell types. Inspired by how co-expression of RNA reveals gene function and regulatory programs, we introduced the concept of translation efficiency covariation (TEC), a conserved property of mammalian transcriptomes, reflecting coordinated translational control. TEC is predictive of protein–protein interactions and gene functions. For instance, we discovered a regulator of glycolysis that was missed by RNA expression and protein abundance analyses (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11326257/">Liu et al. Nature Biotechnology, in press</a>).
+Using this infrastructure, we manually curated and uniformly reprocessed over 3,500 ribosome profiling experiments. This effort yielded a high-quality compendium of translation efficiency measurements across diverse cell types. Inspired by how co-expression of RNA reveals gene function and regulatory programs, we introduced the concept of translation efficiency covariation (TEC), a conserved property of mammalian transcriptomes, reflecting coordinated translational control. TEC is predictive of protein–protein interactions and gene functions. For instance, we discovered a regulator of glycolysis that was missed by RNA expression and protein abundance analyses (<a href="https://rdcu.be/exN0K">Liu et al. Nature Biotechnology</a>).
 </p>
 <p>
-We have also developed RiboNN, a deep neural network that predicts cell-type-specific translation efficiency from full-length mRNA sequences (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11326250/">Zheng et al. Nature Biotechnology, in press</a>). Trained on our large compendium, RiboNN is the most accurate model of translation to date. Beyond prediction, the model reveals sequence features linked to translation, mRNA stability, and localization. RiboNN can help interpret the effects of genetic variants on translation and guide the design of optimized mRNA-based therapies, with implications for both diagnostics and treatment of genetic diseases.
+We have also developed RiboNN, a deep neural network that predicts cell-type-specific translation efficiency from full-length mRNA sequences (<a href="https://rdcu.be/exN1l">Zheng et al. Nature Biotechnology</a>). Trained on our large compendium, RiboNN is the most accurate model of translation to date. Beyond prediction, the model reveals sequence features linked to translation, mRNA stability, and localization. RiboNN can help interpret the effects of genetic variants on translation and guide the design of optimized mRNA-based therapies, with implications for both diagnostics and treatment of genetic diseases.
 </p>
 
 <p>
