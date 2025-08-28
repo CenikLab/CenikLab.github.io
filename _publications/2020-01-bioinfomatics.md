@@ -3,7 +3,7 @@ title: "RiboFlow, RiboR and RiboPy: An ecosystem for analyzing ribosome profilin
 authors: Ozadam H, Geng M, <b>Cenik C</b>
 journal: Bioinformatics
 year: 2020
-month: Online First
+month:
 vol:
 pages:
 doi: 10.1093/bioinformatics/btaa028
