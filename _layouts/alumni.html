@@ -15,9 +15,13 @@ fullwidth: true
                     <strong class="team-title">{{ person.title }}</strong>
                     {{ person | markdownify }}
                     {% if person.linkedin %}
-                        <p>
-                        LinkedIn: <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer">{{ person.linkedin }}</a>
-                        </p>
+                            {% assign url = person.linkedin %}
+                            {% unless person.linkedin contains 'http' %}
+                                {% assign url = 'https://' | append: person.linkedin %}
+                            {% endunless %}
+                            <p>
+                                LinkedIn: <a href="{{ url }}" target="_blank" rel="noopener noreferrer">{{ person.linkedin }}</a>
+                            </p>
                     {% endif %}
                 </div>
             </div>
