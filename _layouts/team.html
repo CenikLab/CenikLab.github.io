@@ -4,34 +4,197 @@ refactor: false
 fullwidth: true
 ---
 
-<div class="row masonry-grid">
-    {% for person in site.team %}
-        <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
-            <div class="card person-card mb-3">
-                <img class="card-img-top" src="{{person.image}}" alt="{{person.name}}"
-                    height="350" width="350">
+<!-- PI Section -->
+<div class="team-section">
+    <h2 class="section-title">Principal Investigator</h2>
+    <hr class="section-divider">
+    <div class="row masonry-grid">
+        {% for person in site.team %}
+            {% if person.role == "PI" %}
+                <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+                    <div class="card person-card mb-3">
+                        <img class="card-img-top" src="{{person.image}}" alt="{{person.name}}"
+                            height="350" width="350">
 
-                {% if person.image %}
-                    {% if person.image.lqip %}
-                    {% capture lqip %}lqip="{{ person.image.lqip }}"{% endcapture %}
-                    {% endif %}
-        
-                    {% assign src = person.image.path | default: person.image %}
-                    {% unless src contains '//' %}
-                    {% assign src = person.img_path | append: '/' | append: src | replace: '//', '/' %}
-                    {% endunless %}
-        
-                    {% assign alt = person.image.alt | default: 'Preview Image' %}
-        
-                    <!-- <img src="{{ src }}" w="15" h="8" alt="{{ alt }}" {{ lqip }}> -->
-                {% endif %}
+                        {% if person.image %}
+                            {% if person.image.lqip %}
+                            {% capture lqip %}lqip="{{ person.image.lqip }}"{% endcapture %}
+                            {% endif %}
+                
+                            {% assign src = person.image.path | default: person.image %}
+                            {% unless src contains '//' %}
+                            {% assign src = person.img_path | append: '/' | append: src | replace: '//', '/' %}
+                            {% endunless %}
+                
+                            {% assign alt = person.image.alt | default: 'Preview Image' %}
+                
+                            <!-- <img src="{{ src }}" w="15" h="8" alt="{{ alt }}" {{ lqip }}> -->
+                        {% endif %}
 
-                <div class="card-body">
-                    <h3 class="card-title mb-0">{{ person.name }}</h3>
-                    <strong class="team-title">{{ person.title }}</strong>
-                    {{ person | markdownify }}
+                        <div class="card-body">
+                            <h3 class="card-title mb-0">{{ person.name }}</h3>
+                            <strong class="team-title">{{ person.title }}</strong>
+                            {{ person | markdownify }}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Post Doc Section -->
+<div class="team-section">
+    <h2 class="section-title">Post Doctoral Researchers</h2>
+    <hr class="section-divider">
+    <div class="row masonry-grid">
+        {% for person in site.team %}
+            {% if person.role == "Post Doc" %}
+                <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+                    <div class="card person-card mb-3">
+                        <img class="card-img-top" src="{{person.image}}" alt="{{person.name}}"
+                            height="350" width="350">
+
+                        {% if person.image %}
+                            {% if person.image.lqip %}
+                            {% capture lqip %}lqip="{{ person.image.lqip }}"{% endcapture %}
+                            {% endif %}
+                
+                            {% assign src = person.image.path | default: person.image %}
+                            {% unless src contains '//' %}
+                            {% assign src = person.img_path | append: '/' | append: src | replace: '//', '/' %}
+                            {% endunless %}
+                
+                            {% assign alt = person.image.alt | default: 'Preview Image' %}
+                
+                            <!-- <img src="{{ src }}" w="15" h="8" alt="{{ alt }}" {{ lqip }}> -->
+                        {% endif %}
+
+                        <div class="card-body">
+                            <h3 class="card-title mb-0">{{ person.name }}</h3>
+                            <strong class="team-title">{{ person.title }}</strong>
+                            {{ person | markdownify }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<!-- PhD Section -->
+<div class="team-section">
+    <h2 class="section-title">Grad Students</h2>
+    <hr class="section-divider">
+    <div class="row masonry-grid">
+        {% for person in site.team %}
+            {% if person.role == "Grad Student" %}
+                <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+                    <div class="card person-card mb-3">
+                        <img class="card-img-top" src="{{person.image}}" alt="{{person.name}}"
+                            height="350" width="350">
+
+                        {% if person.image %}
+                            {% if person.image.lqip %}
+                            {% capture lqip %}lqip="{{ person.image.lqip }}"{% endcapture %}
+                            {% endif %}
+                
+                            {% assign src = person.image.path | default: person.image %}
+                            {% unless src contains '//' %}
+                            {% assign src = person.img_path | append: '/' | append: src | replace: '//', '/' %}
+                            {% endunless %}
+                
+                            {% assign alt = person.image.alt | default: 'Preview Image' %}
+                
+                            <!-- <img src="{{ src }}" w="15" h="8" alt="{{ alt }}" {{ lqip }}> -->
+                        {% endif %}
+
+                        <div class="card-body">
+                            <h3 class="card-title mb-0">{{ person.name }}</h3>
+                            <strong class="team-title">{{ person.title }}</strong>
+                            {{ person | markdownify }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Researcher Section -->
+<div class="team-section">
+    <h2 class="section-title">Researchers</h2>
+    <hr class="section-divider">
+    <div class="row masonry-grid">
+        {% for person in site.team %}
+            {% if person.role == "Researcher" %}
+                <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+                    <div class="card person-card mb-3">
+                        <img class="card-img-top" src="{{person.image}}" alt="{{person.name}}"
+                            height="350" width="350">
+
+                        {% if person.image %}
+                            {% if person.image.lqip %}
+                            {% capture lqip %}lqip="{{ person.image.lqip }}"{% endcapture %}
+                            {% endif %}
+                
+                            {% assign src = person.image.path | default: person.image %}
+                            {% unless src contains '//' %}
+                            {% assign src = person.img_path | append: '/' | append: src | replace: '//', '/' %}
+                            {% endunless %}
+                
+                            {% assign alt = person.image.alt | default: 'Preview Image' %}
+                
+                            <!-- <img src="{{ src }}" w="15" h="8" alt="{{ alt }}" {{ lqip }}> -->
+                        {% endif %}
+
+                        <div class="card-body">
+                            <h3 class="card-title mb-0">{{ person.name }}</h3>
+                            <strong class="team-title">{{ person.title }}</strong>
+                            {{ person | markdownify }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Undergrad Section -->
+<div class="team-section">
+    <h2 class="section-title">Undergraduate Students</h2>
+    <hr class="section-divider">
+    <div class="row masonry-grid">
+        {% for person in site.team %}
+            {% if person.role == "Undergrad" %}
+                <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+                    <div class="card person-card mb-3">
+                        <img class="card-img-top" src="{{person.image}}" alt="{{person.name}}"
+                            height="350" width="350">
+
+                        {% if person.image %}
+                            {% if person.image.lqip %}
+                            {% capture lqip %}lqip="{{ person.image.lqip }}"{% endcapture %}
+                            {% endif %}
+                
+                            {% assign src = person.image.path | default: person.image %}
+                            {% unless src contains '//' %}
+                            {% assign src = person.img_path | append: '/' | append: src | replace: '//', '/' %}
+                            {% endunless %}
+                
+                            {% assign alt = person.image.alt | default: 'Preview Image' %}
+                
+                            <!-- <img src="{{ src }}" w="15" h="8" alt="{{ alt }}" {{ lqip }}> -->
+                        {% endif %}
+
+                        <div class="card-body">
+                            <h3 class="card-title mb-0">{{ person.name }}</h3>
+                            <strong class="team-title">{{ person.title }}</strong>
+                            {{ person | markdownify }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
 </div>

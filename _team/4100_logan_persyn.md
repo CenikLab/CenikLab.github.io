@@ -1,6 +1,7 @@
 ---
 name:  Logan Persyn
 title: Graduate Student
+role: Grad Student
 interests: Computational Lab
 image: /img/team/Logan.jpeg
 im_width: 160

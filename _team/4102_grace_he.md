@@ -1,6 +1,7 @@
 ---
 name: Bingting (Grace) He
 title: Graduate Student
+role: Grad Student
 interests: Computational & Wet Lab
 image: /img/team/grace_he.JPG
 im_width: 160

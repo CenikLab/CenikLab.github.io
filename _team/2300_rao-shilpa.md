@@ -1,6 +1,7 @@
 ---
 name: Shilpa Rao
 title: Research Scientist
+role: Post Doc
 interests: Wet Lab
 image: /img/team/shilpa-rao.jpg
 im_width: 160

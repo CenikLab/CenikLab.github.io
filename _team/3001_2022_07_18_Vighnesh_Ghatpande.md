@@ -1,6 +1,7 @@
 ---
 name: Vighnesh Ghatpande 
 title: Postdoctoral Fellow 
+role: Post Doc
 interests: Wet Lab
 image: /img/team/vighnesh_ghatpande.jpg
 im_width: 160

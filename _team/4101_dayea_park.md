@@ -1,6 +1,7 @@
 ---
 name: Dayea Park
 title: Graduate Student
+role: Grad Student
 interests: Computational & Wet Lab
 image: /img/team/dayea_park.jpg
 im_width: 160

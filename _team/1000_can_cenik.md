@@ -1,6 +1,7 @@
 ---
 name: Can Cenik
 title: Associate Professor
+role: PI
 interests: everything
 image: /img/team/can_cenik.jpeg
 im_width: 160
