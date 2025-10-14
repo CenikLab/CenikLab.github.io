@@ -6,6 +6,7 @@ image: /img/team/yue_liu.jpg
 im_width: 160
 im_height: 160
 description:
+linkedin: LinkedIn.com/in/Yue-Liu-269a94147
 ---
 Yue is interested in cancer and computational biology.  
 She loves to go hiking and play the violin when she is not working.

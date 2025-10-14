@@ -6,6 +6,7 @@ interests: everything
 image: /img/team/can_cenik.jpeg
 im_width: 160
 #im_height: 160
+linkedin: LinkedIn.com/in/Can-Cenik-021b3451
 ---
 Can enjoys playing the piano and chess for fun. He likes to listen to music and spend time with his wife who is also a faculty member at UT. <a href="https://www.sarinayceniklab.org/">Here is more information about her research</a>.
 * 2012 - 2018, Stanford University, School of Medicine   

@@ -5,6 +5,7 @@ interests: Computational & Wet Lab
 image: /img/team/ian_hoskins_new.jpg
 im_width: 160
 im_height: 160
+linkedin: LinkedIn.com/in/Ian-Hoskins-64253256
 ---
 Ian currently works at Monoceros Biosystems. 
 His general research goals involve the application of statistical learning approaches to sequencing data. 

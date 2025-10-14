@@ -4,7 +4,8 @@ title: Research Scientist
 interests: everything
 image: /img/team/Ozadam_Hakan_preview-300x300.jpg
 im_width: 160
-im_height: 160  
+im_height: 160 
+linkedin: LinkedIn.com/in/Hakan-Ozadam-a9422090 
 ---
 Applying his computational skills to biology excites Hakan.
   He enjoys swimming and hiking. 

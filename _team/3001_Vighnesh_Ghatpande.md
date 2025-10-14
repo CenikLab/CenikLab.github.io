@@ -5,6 +5,7 @@ role: Post Doc
 interests: Wet Lab
 image: /img/team/vighnesh_ghatpande.jpg
 im_width: 160
+linkedin: LinkedIn.com/in/Vighnesh-Ghatpande-a57875176
 ---
 Vighnesh is interested in studying the cellular mechanisms of protein translation, particularly in the brain and early development. Outside lab, he enjoys hiking, swimming, and playing board games. He also loves to explore new places and cuisines.
 * 2015 - 2022, National Centre for Cell Science, Pune, India

@@ -5,6 +5,7 @@ role: Post Doc
 interests: Wet Lab
 image: /img/team/shilpa-rao.jpg
 im_width: 160
+linkedin: Linkedin.com/in/Shilpa-Rao-9040a61a
 ---
 Shilpa is interested in understanding different aspects of translation regulation.
 Outside the lab she enjoys cooking, biking and travelling.

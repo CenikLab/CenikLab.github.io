@@ -14,6 +14,11 @@ fullwidth: true
                     <h3 class="card-title mb-0">{{ person.name }}</h3>
                     <strong class="team-title">{{ person.title }}</strong>
                     {{ person | markdownify }}
+                    {% if person.linkedin %}
+                        <p>
+                        LinkedIn: <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer">{{ person.linkedin }}</a>
+                        </p>
+                    {% endif %}
                 </div>
             </div>
         </div>

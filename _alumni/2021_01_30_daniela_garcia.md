@@ -5,6 +5,7 @@ interests: Computational & Wet Lab
 image: /img/team/daniela_garcia.jpg
 im_width: 160
 im_height: 160
+linkedin: LinkedIn.com/in/pdanielagarcia
 ---
 Daniela currently works at Thermo Fisher.
 
