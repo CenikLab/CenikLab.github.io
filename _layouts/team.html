@@ -35,6 +35,15 @@ fullwidth: true
                             <h3 class="card-title mb-0">{{ person.name }}</h3>
                             <strong class="team-title">{{ person.title }}</strong>
                             {{ person | markdownify }}
+                            
+                            <!-- LinkedIn Link -->
+                            {% if person.linkedin %}
+                            <div class="linkedin-link mt-2">
+                                <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -74,6 +83,13 @@ fullwidth: true
                             <h3 class="card-title mb-0">{{ person.name }}</h3>
                             <strong class="team-title">{{ person.title }}</strong>
                             {{ person | markdownify }}
+                            {% if person.linkedin %}
+                            <div class="linkedin-link mt-2">
+                                <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -113,6 +129,13 @@ fullwidth: true
                             <h3 class="card-title mb-0">{{ person.name }}</h3>
                             <strong class="team-title">{{ person.title }}</strong>
                             {{ person | markdownify }}
+                            {% if person.linkedin %}
+                            <div class="linkedin-link mt-2">
+                                <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -152,6 +175,13 @@ fullwidth: true
                             <h3 class="card-title mb-0">{{ person.name }}</h3>
                             <strong class="team-title">{{ person.title }}</strong>
                             {{ person | markdownify }}
+                            {% if person.linkedin %}
+                            <div class="linkedin-link mt-2">
+                                <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -191,6 +221,13 @@ fullwidth: true
                             <h3 class="card-title mb-0">{{ person.name }}</h3>
                             <strong class="team-title">{{ person.title }}</strong>
                             {{ person | markdownify }}
+                            {% if person.linkedin %}
+                            <div class="linkedin-link mt-2">
+                                <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
