@@ -1,6 +1,6 @@
 ---
 title: "satmut_utils: a simulation and variant calling package for multiplexed assays of variant effect"
-authors: Hoskins I, Sun S, Cote A, Roth FP <b>Cenik C</b>
+authors: Hoskins I, Sun S, Cote A, Roth FP <b>Cenik C§</b>
 journal: Genome Biology
 year: 2023
 month: Apr

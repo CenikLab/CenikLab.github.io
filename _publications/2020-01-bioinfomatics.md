@@ -1,6 +1,6 @@
 ---
 title: "RiboFlow, RiboR and RiboPy: An ecosystem for analyzing ribosome profiling data at read length resolution"
-authors: Ozadam H, Geng M, <b>Cenik C</b>
+authors: Ozadam H, Geng M, <b>Cenik C§</b>
 journal: Bioinformatics
 year: 2020
 month:
