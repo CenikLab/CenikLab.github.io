@@ -1,6 +1,7 @@
 ---
 name:  Jonathan Chacko
 title: Undergraduate Research Assistant
+role: Post Bach
 interests: Computational & Wet Lab
 image: /img/team/jonathan_chacko.jpeg
 im_width: 160

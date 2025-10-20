@@ -1,6 +1,7 @@
 ---
 name: Hakan Ozadam
 title: Research Scientist
+role: Post Doc Alum
 interests: everything
 image: /img/team/Ozadam_Hakan_preview-300x300.jpg
 im_width: 160

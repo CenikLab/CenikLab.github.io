@@ -1,6 +1,7 @@
 ---
 name: Charisma Tante
 title: Undergraduate Laboratory Assistant
+role: Post Bach
 interests: Wet Lab
 image: /img/team/charisma_tante.jpg
 im_width: 160

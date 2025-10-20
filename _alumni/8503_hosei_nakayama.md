@@ -1,6 +1,7 @@
 ---
 name: Hosei Nakajima
 title: Undergraduate Research Assistant
+role: Post Bach
 interests: Computational & Wet Lab
 image: /img/team/hosei_nakayama.jpeg
 im_width: 160

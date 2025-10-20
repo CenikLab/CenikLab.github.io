@@ -1,6 +1,7 @@
 ---
 name: Reiko Tachibana
 title: Undergraduate Research Assistant
+role: Post Bach
 interests: Computational Biology
 image: /img/team/reiko_tachibana.JPEG
 im_width: 160

@@ -1,6 +1,7 @@
 ---
 name: Ian Hoskins
-title: PhD Student
+title: Bioinformatics Scientist
+role: Post Doc Alum
 interests: Computational & Wet Lab
 image: /img/team/ian_hoskins_new.jpg
 im_width: 160

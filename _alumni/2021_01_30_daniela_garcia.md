@@ -2,6 +2,7 @@
 name: Daniela Garcia
 title: Postdoctoral Fellow
 interests: Computational & Wet Lab
+role: Post Doc Alum
 image: /img/team/daniela_garcia.jpg
 im_width: 160
 im_height: 160

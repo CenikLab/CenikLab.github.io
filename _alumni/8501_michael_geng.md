@@ -1,6 +1,7 @@
 ---
 name: Michael Geng
 title: Research Associate
+role: Post Bach
 interests: Computational & Wet Lab
 image: /img/team/michael_geng_clipped.jpeg
 im_width: 160

@@ -1,6 +1,7 @@
 ---
 name: Yue Liu
-title: PhD Student
+title: Bioinformatics Scientist
+role: Post Doc Alum
 interests: Computational & Wet Lab
 image: /img/team/yue_liu.jpg
 im_width: 160
