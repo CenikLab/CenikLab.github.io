@@ -5,4 +5,5 @@ order: 1
 sub_pages:
     - Ribo
     - Satmut_utils
+    - RiboGraph
 ---
