@@ -2,7 +2,7 @@
 name: Tori Tonn
 title: Research Associate
 interests: Wet Lab
-role: Post Bach
+role: Associate
 image: /img/team/tori-tonn-3.jpg
 im_width: 160
 im_height: 160

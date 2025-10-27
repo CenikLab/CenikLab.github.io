@@ -1,7 +1,7 @@
 ---
 name: Brendan Panici
 title: Undergraduate Research Assistant
-role: Post Bach
+role: Undergrad
 interests: Computational & Wet Lab
 current_position: Graduate Student at Baylor College
 image: /img/team/brendan_panici.jpg

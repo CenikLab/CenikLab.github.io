@@ -2,7 +2,7 @@
 name: William Zhang
 title: Undergraduate Research Assistant
 interests: Dry Lab
-role: Post Bach
+role: Undergrad
 image: /img/team/william_zhang.jpg
 im_width: 160
 im_height: 160

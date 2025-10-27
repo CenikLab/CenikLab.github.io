@@ -1,7 +1,7 @@
 ---
 name: Ashley Hoffman
 title: Undergraduate Research Assistant
-role: Post Bach
+role: Undergrad
 interests: Computational & Wet Lab
 image: /img/team/ashley_hoffman.jpg
 im_width: 160

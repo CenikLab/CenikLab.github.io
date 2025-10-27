@@ -1,7 +1,7 @@
 ---
 name: Muxin Wang
 title: Undergraduate Research Assistant
-role: Post Bach
+role: Undergrad
 interests: Computational & Wet Lab
 image: /img/team/muxin.jpeg
 im_width: 160

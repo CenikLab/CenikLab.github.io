@@ -1,7 +1,7 @@
 ---
 name: Kangsheng ("Hurley") Qi
 title: Undergraduate Research Assistant
-role: Post Bach
+role: Undergrad
 interests: Computational Biology & Medicine
 image: /img/team/Hurley_qi.jpg
 im_width: 160

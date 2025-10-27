@@ -4,7 +4,7 @@ refactor: false
 fullwidth: true
 ---
 
-<!-- Postdoctoral Fellows Section -->
+<!-- Research Scientist / Postdoctoral Fellow-->
 <div class="team-section">
     <h2 class="section-title">Postdoctoral Fellows</h2>
     <hr class="section-divider">
@@ -47,13 +47,100 @@ fullwidth: true
     </div>
 </div>
 
-<!-- Post Bach -->
+<!-- PhD Student -->
 <div class="team-section">
-    <h2 class="section-title">Post Bach</h2>
+    <h2 class="section-title">PhD Student</h2>
     <hr class="section-divider">
     <div class="row masonry-grid">
         {% for person in site.alumni %}
-            {% if person.role == "Post Bach" %}
+            {% if person.role == "Grad" %}
+                <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+                    <div class="card person-card mb-3">
+                        {% if person.image %}
+                            {% if person.image.lqip %}
+                                {% capture lqip %}lqip="{{ person.image.lqip }}"{% endcapture %}
+                            {% endif %}
+                            {% assign src = person.image.path | default: person.image %}
+                            {% unless src contains '//' %}
+                                {% assign src = person.img_path | append: '/' | append: src | replace: '//', '/' %}
+                            {% endunless %}
+                            {% assign alt = person.image.alt | default: 'Preview Image' %}
+                            <img class="card-img-top" src="{{ src }}" alt="{{ alt }}" height="350" width="350" {{ lqip }}>
+                        {% endif %}
+                        
+                        <div class="card-body">
+                            <h3 class="card-title mb-0">{{ person.name }}</h3>
+                            <strong class="team-title">{{ person.title }}</strong>
+                            {{ person | markdownify }}
+                            
+                            {% if person.linkedin %}
+                                {% assign url = person.linkedin %}
+                                {% unless person.linkedin contains 'http' %}
+                                    {% assign url = 'https://' | append: person.linkedin %}
+                                {% endunless %}
+                                <p>
+                                    LinkedIn: <a href="{{ url }}" target="_blank" rel="noopener noreferrer">{{ person.linkedin }}</a>
+                                </p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Research Associate -->
+<div class="team-section">
+    <h2 class="section-title">Research Associate</h2>
+    <hr class="section-divider">
+    <div class="row masonry-grid">
+        {% for person in site.alumni %}
+            {% if person.role == "Associate" %}
+                <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
+                    <div class="card person-card mb-3">
+                        {% if person.image %}
+                            {% if person.image.lqip %}
+                                {% capture lqip %}lqip="{{ person.image.lqip }}"{% endcapture %}
+                            {% endif %}
+                            {% assign src = person.image.path | default: person.image %}
+                            {% unless src contains '//' %}
+                                {% assign src = person.img_path | append: '/' | append: src | replace: '//', '/' %}
+                            {% endunless %}
+                            {% assign alt = person.image.alt | default: 'Preview Image' %}
+                            <img class="card-img-top" src="{{ src }}" alt="{{ alt }}" height="350" width="350" {{ lqip }}>
+                        {% endif %}
+                        
+                        <div class="card-body">
+                            <h3 class="card-title mb-0">{{ person.name }}</h3>
+                            <strong class="team-title">{{ person.title }}</strong>
+                            {{ person | markdownify }}
+                            
+                            {% if person.linkedin %}
+                                {% assign url = person.linkedin %}
+                                {% unless person.linkedin contains 'http' %}
+                                    {% assign url = 'https://' | append: person.linkedin %}
+                                {% endunless %}
+                                <p>
+                                    LinkedIn: <a href="{{ url }}" target="_blank" rel="noopener noreferrer">{{ person.linkedin }}</a>
+                                </p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+<!-- Undergraduate -->
+<div class="team-section">
+    <h2 class="section-title">Undergraduate</h2>
+    <hr class="section-divider">
+    <div class="row masonry-grid">
+        {% for person in site.alumni %}
+            {% if person.role == "Undergrad" %}
                 <div class="masonry-item col-12 col-sm-6 col-lg-6 col-xl-4">
                     <div class="card person-card mb-3">
                         {% if person.image %}
