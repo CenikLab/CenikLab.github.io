@@ -8,7 +8,7 @@ im_width: 160
 im_height: 160
 linkedin: LinkedIn.com/in/pdanielagarcia
 ---
-Daniela currently works at Thermo Fisher.
+Daniela currently works at Thermo Fisher as a Staff Scientist.
 
 * 2011-2018, Princeton University  
 PhD, Molecular Biology  

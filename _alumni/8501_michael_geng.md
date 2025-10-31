@@ -8,8 +8,8 @@ im_width: 160
 im_height: 160   
 linkedin: LinkedIn.com/in/MichaelJGeng
 ---
-Michael is currently a medical student in the EnMed program of Texas A&M.   
-   His research interests deal with the computational methods of ribosome profiling.
+Michael moved onto the EnMed program of Texas A&M. He is currently a surgery resident at UVA Health. 
+   
 
 * 2020, University of Texas at Austin   
 B.S. Computer Science  
