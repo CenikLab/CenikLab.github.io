@@ -33,14 +33,14 @@ We use Ribo-ITP to investigate diverse biological questions, often in close coll
 <ol>
   <li>
     Characterization of allelic variants in the ribosome biogenesis factor AIRIM in human cerebral organoids 
-    (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10802443/" target="_blank">Ni et al., <em>Nature Cell Biology</em>, in press</a>).
+    (<a href="https://www.nature.com/articles/s41556-025-01708-8" target="_blank">Ni et al., <em>Nature Cell Biology</em></a>).
   </li>
   <li>
     Application of Ribo-ITP in <em>C. elegans</em> to map dynamic changes in the translation of maternal mRNAs during the first four cell cycles of embryogenesis 
-    (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11741243/" target="_blank">Shukla et al., <em>Cell Reports</em>, in press</a>).
+    (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12291612/" target="_blank">Shukla et al., <em>Cell Reports</em></a>).
   </li>
   <li>
-    Use of selective ribosome profiling in yeast to show that that Reh1-bound ribosomes accumulate near start codons. Our data suggest that Reh1 is displaced by the elongating nascent peptide and is the final assembly factor released from the 60S ribosomal subunit during its first round of translation 
-    (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11791190/" target="_blank">Musalgaonkar et al., <em>Nature Communications</em></a>).
+Application of Ribo-ITP to uncover non-canonical translation events in ultra-low-input samples (<a href="https://www.biorxiv.org/content/10.1101/2025.08.04.668486v1" target="_blank">Ghatpande et al., <em>bioRxiv</em></a>). Using Ribo-ITP, we profiled ribosome occupancy in microdissected hippocampal tissues and single mouse embryos, revealing thousands of translated short open reading frames (“translons”). Functional assays confirmed translation of selected translons, extending the Ribo-ITP platform to define hidden layers of the translatome in rare cell populations.
+
   </li>
 </ol>
