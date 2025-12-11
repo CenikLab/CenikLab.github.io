@@ -1,5 +1,5 @@
 ---
-name: Bingting (Grace) He
+name: Tae-Rim Lee
 title: Graduate Student
 role: Grad Student
 interests: Computational & Wet Lab
