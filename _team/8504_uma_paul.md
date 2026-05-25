@@ -1,7 +1,7 @@
 ---
 name: Uma Paul
-title: Undergraduate Research Assistant
-role: Undergrad
+title: Research Assistant
+role: Researcher
 interests: Computational Lab
 image: /img/team/uma_paul.jpg
 im_width: 160
